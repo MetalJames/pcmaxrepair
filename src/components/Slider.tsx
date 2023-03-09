@@ -22,7 +22,7 @@ const Slider = () => {
         infinite: true,
         speed: 500,
         autoplay: true,
-        autoplaySpeed: 300000,
+        autoplaySpeed: 3000,
         fade: true,
         responsive: [
             {breakpoint:500,
