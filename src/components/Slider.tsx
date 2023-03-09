@@ -35,15 +35,12 @@ const Slider = () => {
             <SliderSlick {...settings}>
             <div>
                 { isMobile ? <img style={{width: '100%'}} src={mySlideOneMobile} /> : <img src={mySlideOne} /> }
-                { isMobile ? <h1>Mobile</h1> : <h3>Desktop</h3> }
             </div>
             <div>
                 { isMobile ? <img style={{width: '100%'}} src={mySlideTwoMobile} /> : <img src={mySlideTwo} /> }
-                { isMobile ? <h1>Mobile</h1> : <h3>Desktop</h3> }
             </div>
             <div>
                 { isMobile ? <img style={{width: '100%'}} src={mySlideThreeMobile} /> : <img src={mySlideThree} /> }
-                { isMobile ? <h1>Mobile</h1> : <h3>Desktop</h3> }
             </div>
             </SliderSlick>
         </>
@@ -51,15 +48,3 @@ const Slider = () => {
 }
 
 export default Slider;
-
-// import React, { Component } from "react";
-
-
-// export default class SimpleSlider extends Component {
-//     render() {
-    
-//     return (
-
-//         );
-//     }
-// }
