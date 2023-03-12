@@ -1,5 +1,5 @@
-// import { FaCheckCircle } from 'react-icons';
-// MdVerified  import { IconName } from "react-icons/md";
+import { MdPhoneIphone, MdPhoneAndroid, MdLaptopMac, MdLaptopWindows, MdMemory, MdTabletMac, MdOutlineWaterDrop, MdOutlineVideogameAsset, MdDevicesOther, MdCheck } from 'react-icons/md';
+import { apple, google, microsoft, nintendo, playstation, samsung, xbox } from '../assets/brandswecanfix'
 
 export const faq_questions = [
     {
@@ -112,72 +112,131 @@ export const whychooseus = [
         id: 'why-choose-us-1',
         title: 'Free Diagnostics',
         description: 'Bring your device to our store and get a free diagnosis of your gadget.',
-        // logo:
+        logo: MdCheck,
     },
     {
         id: 'why-choose-us-2',
         title: 'On the Spot Service',
-        description: 'We offer on spot services for a lot of minor issues like battery replacement and general breakdowns.'
-        // logo:
+        description: 'We offer on spot services for a lot of minor issues like battery replacement and general breakdowns.',
+        logo: MdCheck,
     },
     {
         id: 'why-choose-us-3',
         title: 'Warranties on Services / Repairs',
-        description: 'Services and repairs come with warranties to help you get best experience possible.'
-        // logo:
+        description: 'Services and repairs come with warranties to help you get best experience possible.',
+        logo: MdCheck,
     },
     {
         id: 'why-choose-us-4',
         title: 'Quality Parts',
-        description: 'All our parts from reliable sources and always come.'
-        // logo:
+        description: 'All our parts from reliable sources and always come.',
+        logo: MdCheck,
     },
     {
         id: 'why-choose-us-5',
-        title: 'REFERRED BY MANY'
-        // logo:
+        title: 'REFERRED BY MANY',
+        description: 'With our happy customers, we are getting a lot of referrals, check out our reviews on Google.',
+        logo: MdCheck,
     },
     {
         id: 'why-choose-us-6',
         title: 'No fix - no fee!',
-        description: '',
-        // logo:
+        description: 'We always can provide you with the solution but if it is too expensive or you dont want to fix it - you dont pay.',
+        logo: MdCheck,
     },
 ];
+
 export const ourservices = [
     {
         id: 'our-services-1',
         title: 'iPhone Repair',
-        description: 'Bring your device to our store and get a free diagnosis of your gadget.',
-        // logo:
+        description: 'At MAX REPAIR, you can get help with your iPhone in no time.',
+        logo: MdPhoneIphone,
     },
     {
         id: 'our-services-2',
         title: 'Smartphone Repair',
-        description: 'We offer on spot services for a lot of minor issues like battery replacement and general breakdowns.'
-        // logo:
+        description: 'We offer on spot services for a lot of minor issues like battery replacement and general breakdowns.',
+        logo: MdPhoneAndroid,
     },
     {
         id: 'our-services-3',
         title: 'iPad / Tablet Repair',
-        description: 'Whether your iPad or Tablet has a broken screen or maybe your battery no longer holds the charge, or you have software issues, or any other issue that interrupts smooth performance, we will take care of it.'
-        // logo:
+        description: 'Whether your iPad or Tablet has a broken screen or maybe your battery no longer holds the charge, or you have software issues, or any other issue that interrupts smooth performance, we will take care of it.',
+        logo: MdTabletMac,
     },
     {
         id: 'our-services-4',
         title: 'Macbook Repair',
-        description: 'All our parts from reliable sources and always come.'
-        // logo:
+        description: 'At MAX REPAIR, you can get help with simple upgrades on your mac to a motherboard level repairs.',
+        logo: MdLaptopMac,
     },
     {
         id: 'our-services-5',
-        title: 'REFERRED BY MANY'
-        // logo:
+        title: 'Laptop Repair',
+        description: 'We are specialized in Asus, Acer, Lenovo, Dell, Toshiba, Chromebook, MSI, HP, and any other brands.',
+        logo: MdLaptopWindows,
     },
     {
         id: 'our-services-6',
-        title: 'No fix - no fee!',
-        description: '',
-        // logo:
+        title: 'Logic Board Repair',
+        description: 'With 20+ years of expirience we have very high success rate of repair logic board. Bring it in - and we will help',
+        logo: MdMemory,
+    },
+    {
+        id: 'our-services-7',
+        title: 'Liquid Damage Repair',
+        description: 'We can fix liquid damage logicboards/motherboards at a high success rate.',
+        logo: MdOutlineWaterDrop,
+    },
+    {
+        id: 'our-services-8',
+        title: 'Gaming Console Repair',
+        description: 'At MAX REPAIR, you can repair your PS4, Nintendo, XBOX the same day.',
+        logo: MdOutlineVideogameAsset,
+    },
+    {
+        id: 'our-services-9',
+        title: 'Other Electronics Repair',
+        description: 'If you can not see your device in the listing, no worries - give us a call and ask, we will be able to help you',
+        logo: MdDevicesOther,
     },
 ];
+
+export const brandswecanfix = [
+    {
+        id: 'brandswecanfix-1',
+        title: 'apple',
+        logo: apple,
+    },
+    {
+        id: 'brandswecanfix-2',
+        title: 'samsung',
+        logo: samsung,
+    },
+    {
+        id: 'brandswecanfix-3',
+        title: 'google',
+        logo: google,
+    },
+    {
+        id: 'brandswecanfix-4',
+        title: 'microsoft',
+        logo: microsoft,
+    },
+    {
+        id: 'brandswecanfix-5',
+        title: 'playstation',
+        logo: playstation,
+    },
+    {
+        id: 'brandswecanfix-6',
+        title: 'nintendo',
+        logo: nintendo,
+    },
+    {
+        id: 'brandswecanfix-7',
+        title: 'xbox',
+        logo: xbox,
+    },
+]
