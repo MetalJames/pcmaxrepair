@@ -101,34 +101,34 @@ export const faq_questions = [
             {
                 id: 3.8,
                 question: "What are your store hours?",
-                answer: "We are open Mon:10:00 AM – 2:00 PM, Tue to Fri:9:00 AM – 6:00 PM, Sat:10:00 AM – 4:00 PM, and also Sun:10:00 AM – 3:00 PM"
+                answer: "We are open Mon:10:00 AM - 2:00 PM, Tue to Fri:9:00 AM - 6:00 PM, Sat:10:00 AM - 4:00 PM, and also Sun:10:00 AM - 3:00 PM"
             },
         ]
     },
 ];
 
-export const clients = [
+export const whychooseus = [
     {
         id: 'why-choose-us-1',
-        title: 'Free Diagnostics​',
+        title: 'Free Diagnostics',
         description: 'Bring your device to our store and get a free diagnosis of your gadget.',
         // logo:
     },
     {
         id: 'why-choose-us-2',
-        title: 'On the Spot Service​',
+        title: 'On the Spot Service',
         description: 'We offer on spot services for a lot of minor issues like battery replacement and general breakdowns.'
         // logo:
     },
     {
         id: 'why-choose-us-3',
-        title: 'Warranties on Services / Repairs​',
+        title: 'Warranties on Services / Repairs',
         description: 'Services and repairs come with warranties to help you get best experience possible.'
         // logo:
     },
     {
         id: 'why-choose-us-4',
-        title: 'Quality Part​,',
+        title: 'Quality Parts',
         description: 'All our parts from reliable sources and always come.'
         // logo:
     },
@@ -139,7 +139,45 @@ export const clients = [
     },
     {
         id: 'why-choose-us-6',
-        title: 'No fix - no fee!'
+        title: 'No fix - no fee!',
+        description: '',
+        // logo:
+    },
+];
+export const ourservices = [
+    {
+        id: 'our-services-1',
+        title: 'iPhone Repair',
+        description: 'Bring your device to our store and get a free diagnosis of your gadget.',
+        // logo:
+    },
+    {
+        id: 'our-services-2',
+        title: 'Smartphone Repair',
+        description: 'We offer on spot services for a lot of minor issues like battery replacement and general breakdowns.'
+        // logo:
+    },
+    {
+        id: 'our-services-3',
+        title: 'iPad / Tablet Repair',
+        description: 'Whether your iPad or Tablet has a broken screen or maybe your battery no longer holds the charge, or you have software issues, or any other issue that interrupts smooth performance, we will take care of it.'
+        // logo:
+    },
+    {
+        id: 'our-services-4',
+        title: 'Macbook Repair',
+        description: 'All our parts from reliable sources and always come.'
+        // logo:
+    },
+    {
+        id: 'our-services-5',
+        title: 'REFERRED BY MANY'
+        // logo:
+    },
+    {
+        id: 'our-services-6',
+        title: 'No fix - no fee!',
+        description: '',
         // logo:
     },
 ];
