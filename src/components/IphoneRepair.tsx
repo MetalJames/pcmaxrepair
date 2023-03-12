@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 const IphoneRepair = () => {
+
     return (
-        <div>Iphone Repair</div>
+        <div>
+            <div>Iphone Repair</div>
+        </div>
     )
 }
 
