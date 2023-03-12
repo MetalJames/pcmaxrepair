@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 
-const App = () => {
+const ContactUs = () => {
     const { register, handleSubmit, watch } = useForm();
     // const { register, handleSubmit, watch, errors } = useForm();
 
@@ -16,3 +16,5 @@ const App = () => {
         </form>
     );
 };
+
+export default ContactUs;

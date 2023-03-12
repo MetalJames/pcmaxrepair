@@ -21,17 +21,22 @@ const Navbar = () => {
                             <span className='mr-1'>Services</span>
                             <svg className={`w-4 h-4 object-contain ml-2 ${open ? 'rotate-180 transition-all' : 'rotate-0 transition-all'}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg>
                         </button>
-                        <ul className={`dropdown-menu opacity-0 absolute text-gray-700 pt-1 z-50 ${open ? 'opacity-100 transition-all' : 'opacity-0 transition-all mt-1 -z-10'}`}>
+                        <ul className={`dropdown-menu hidden absolute text-gray-700 pt-1 z-50 ${open ? 'opacity-100 transition-all' : 'opacity-0 transition-all mt-1'}`}>
                             <Link to='/iphone_repair'>
-                                <li className=""><a className='rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap' href="#">iPhone Repair</a></li>
+                                {/* <li className=""><a className='rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap' href="#">iPhone Repair</a></li> */}
+                                <li className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">iPhone Repair</li>
                             </Link>
-                            <li className=""><a className='bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap' href="#">Two</a></li>
-                            <li className=""><a className='rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap' href="#">Three is the magic number</a></li>
+                            <li className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">Two</li>
+                            <li className="ounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">Three is the magic number</li>
                         </ul>
                     </div>
                 </li>
-                <li className='mr-10'>FAQ</li>
-                <li className='mr-10'>Contact Us</li>
+                <Link to='/faq'>
+                    <li className='mr-10'>FAQ</li>
+                </Link>
+                <Link to='/contact_us'>
+                    <li className='mr-10'>Contact Us</li>
+                </Link>
             </ul>
         </div>
     )
