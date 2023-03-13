@@ -6,7 +6,7 @@ const Banner = () => {
     const isMobile = window.innerWidth <= 500;
 
     return (
-        <div className='flex py-4 px-10 justify-end items-center bg-slate-100 shadow-md'>
+        <div className='flex px-4 py-4 sm:px-10 justify-end items-center bg-slate-100 shadow-md'>
                 <a href='tel:+6199942413'className='flex items-center mr-10'>
                     <FaPhoneAlt size='19' className='nav-linker'/>&nbsp;&nbsp;
                     <p className="">905-517-9610</p>
@@ -16,7 +16,7 @@ const Banner = () => {
                     <FaDirections size='19' className='nav-linker'/>&nbsp;&nbsp;
                     <p>Get Direction</p>
                 </a>
-                <p className='flex items-center'>
+                <p className='hidden sm:flex items-center'>
                     <FaDoorOpen size='19' className='nav-linker'/>&nbsp;&nbsp;
                     Mon To Fri: 9:30AM - 7:30PM | Saturday: 11:00AM to 5:30PM
                 </p>
