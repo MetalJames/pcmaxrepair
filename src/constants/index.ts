@@ -1,12 +1,6 @@
 import { MdPhoneIphone, MdPhoneAndroid, MdLaptopMac, MdLaptopWindows, MdMemory, MdTabletMac, MdOutlineWaterDrop, MdOutlineVideogameAsset, MdDevicesOther, MdCheck } from 'react-icons/md';
 import { apple, google, microsoft, nintendo, playstation, samsung, xbox } from '../assets/brandswecanfix';
 
-type NavLinksProps = {
-    id: string;
-    title: string;
-    link: string | [];
-};
-
 export const navLinks = [
     {
         id: "home",
@@ -30,42 +24,42 @@ export const navLinks = [
             {
                 id: "smartphonerepair",
                 title: "Smartphone Repair",
-                sublink: '/',
+                sublink: '/smartphone_repair',
             },
             {
                 id: "ipadtabletrepair",
                 title: "iPad / Tablet Repair",
-                sublink: '/',
+                sublink: '/ipadtablet_repair',
             },
             {
                 id: "macbookrepair",
                 title: "MacBook Repair",
-                sublink: '/',
+                sublink: '/macbook_repair',
             },
             {
                 id: "laptoprepair",
                 title: "Laptop Repair",
-                sublink: '/',
+                sublink: '/laptop_repair',
             },
             {
                 id: "logicboardrepair",
                 title: "Logic Board Repair",
-                sublink: '/',
+                sublink: '/logicboard_repair',
             },
             {
                 id: "liquiddamagerepair",
                 title: "Liquid Damage Repair",
-                sublink: '/',
+                sublink: '/liquiddamege_repair',
             },
             {
                 id: "gamingconsolerepair",
                 title: "Gaming Console Repair",
-                sublink: '/',
+                sublink: '/gamingconsole_repair',
             },
             {
                 id: "otherelectronicsrepair",
                 title: "Other Electronics Repair",
-                sublink: '/',
+                sublink: '/otherelectronic_repair',
             },
         ]
     },

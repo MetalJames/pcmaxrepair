@@ -2,7 +2,7 @@ import React from 'react'
 
 const IPadTabletRepair = () => {
     return (
-        <div>iPadTabletRepair</div>
+        <div>IPadTabletRepair</div>
     )
 }
 
