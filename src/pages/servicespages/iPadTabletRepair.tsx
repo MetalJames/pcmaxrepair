@@ -1,9 +1,9 @@
 import React from 'react'
 
-const iPadTabletRepair = () => {
+const IPadTabletRepair = () => {
     return (
         <div>iPadTabletRepair</div>
     )
 }
 
-export default iPadTabletRepair
+export default IPadTabletRepair;

@@ -9,9 +9,9 @@ const Navbar = () => {
 
     return (
         <nav className='w-full flex py-6 justify-between items-center navbar'>
-            <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
+            <ul key={1} className='list-none sm:flex hidden justify-end items-center flex-1'>
                 {navLinks.map(({ id, title, link, links }) => (
-                    <>
+                    <div key={id}>
                     {'services' === id ? 
                         <li className='mr-10' onMouseOver={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
                             <div className='dropdown inline-block relative'>
@@ -19,9 +19,9 @@ const Navbar = () => {
                                     <span className='mr-1'>{title}</span>
                                     <svg className={`w-4 h-4 object-contain ml-2 ${open ? 'rotate-180 transition-all' : 'rotate-0 transition-all'}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg>
                                 </button>
-                                <ul className={`dropdown-menu hidden absolute text-gray-700 pt-1 z-50 ${open ? 'opacity-100 transition-all' : 'opacity-0 transition-all mt-1'}`}>
+                                <ul className={`w-[200px] dropdown-menu hidden absolute text-gray-700 pt-1 z-50 ${open ? 'opacity-100 transition-all' : 'opacity-0 transition-all mt-1'}`}>
                                     {links!.map(({ id, title, sublink }) => (
-                                        <Link to={`${sublink}`}>
+                                        <Link key={id} to={`${sublink}`}>
                                             <li key={id} onClick={() => setOpen(false)} className="rounded bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">{title}</li>
                                         </Link>
                                     ))}
@@ -29,13 +29,13 @@ const Navbar = () => {
                             </div>
                         </li>
                         :
-                        <Link to={`${link}`}>
+                        <Link key={id} to={`${link}`}>
                             <li key={id} className='font-poppins font-normal cursor-pointer text-[16px] text-black mr-10'>
                                 {title}
                             </li>
                         </Link>
                     }
-                    </>
+                    </div>
                 ))}
             </ul>
         </nav>

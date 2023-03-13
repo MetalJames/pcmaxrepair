@@ -37,6 +37,36 @@ export const navLinks = [
                 title: "iPad / Tablet Repair",
                 sublink: '/',
             },
+            {
+                id: "macbookrepair",
+                title: "MacBook Repair",
+                sublink: '/',
+            },
+            {
+                id: "laptoprepair",
+                title: "Laptop Repair",
+                sublink: '/',
+            },
+            {
+                id: "logicboardrepair",
+                title: "Logic Board Repair",
+                sublink: '/',
+            },
+            {
+                id: "liquiddamagerepair",
+                title: "Liquid Damage Repair",
+                sublink: '/',
+            },
+            {
+                id: "gamingconsolerepair",
+                title: "Gaming Console Repair",
+                sublink: '/',
+            },
+            {
+                id: "otherelectronicsrepair",
+                title: "Other Electronics Repair",
+                sublink: '/',
+            },
         ]
     },
     {
