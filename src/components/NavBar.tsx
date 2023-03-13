@@ -3,13 +3,7 @@ import { Link } from 'react-router-dom';
 import "./navbar.css";
 import { navLinks } from '../constants';
 
-type NavLinksProps = {
-    id: string;
-    title: string;
-    link: string | [];
-};
-
-const Navbar = (props: NavLinksProps) => {
+const Navbar = () => {
 
     const [open, setOpen] = useState(false)
 
