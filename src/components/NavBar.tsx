@@ -21,7 +21,7 @@ const Navbar = () => {
                                     <span className='mr-1'>{title}</span>
                                     <svg className={`w-4 h-4 object-contain ml-2 ${open ? 'rotate-180 transition-all' : 'rotate-0 transition-all'}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg>
                                 </button>
-                                <ul className={`w-[200px] dropdown-menu hidden absolute text-gray-700 pt-1 z-50 ${open ? 'opacity-100 transition-all' : 'opacity-0 transition-all mt-1'}`}>
+                                <ul className={`w-[200px] dropdown-menu hidden absolute text-gray-700 pt-1 z-50 ${open ? 'visible transition-all' : 'invisible transition-all mt-1'}`}>
                                     {links!.map(({ id, title, sublink }) => (
                                         <Link key={id} to={`${sublink}`}>
                                             <li key={id} onClick={() => setOpen(false)} className="rounded bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">{title}</li>
