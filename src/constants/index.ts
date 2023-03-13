@@ -1,5 +1,55 @@
 import { MdPhoneIphone, MdPhoneAndroid, MdLaptopMac, MdLaptopWindows, MdMemory, MdTabletMac, MdOutlineWaterDrop, MdOutlineVideogameAsset, MdDevicesOther, MdCheck } from 'react-icons/md';
-import { apple, google, microsoft, nintendo, playstation, samsung, xbox } from '../assets/brandswecanfix'
+import { apple, google, microsoft, nintendo, playstation, samsung, xbox } from '../assets/brandswecanfix';
+
+type NavLinksProps = {
+    id: string;
+    title: string;
+    link: string | [];
+};
+
+export const navLinks = [
+    {
+        id: "home",
+        title: "Home",
+        link: "/",
+    },
+    {
+        id: "aboutus",
+        title: "About Us",
+        link: "/about_us",
+    },
+    {
+        id: "services",
+        title: "Services",
+        links: [
+            {
+                id: "iphonerepair",
+                title: "iPhone Repair",
+                sublink: '/iphone_repair',
+            },
+            {
+                id: "smartphonerepair",
+                title: "Smartphone Repair",
+                sublink: '/',
+            },
+            {
+                id: "ipadtabletrepair",
+                title: "iPad / Tablet Repair",
+                sublink: '/',
+            },
+        ]
+    },
+    {
+        id: "faq",
+        title: "FAQ",
+        link: "/faq",
+    },
+    {
+        id: "contactus",
+        title: "Contact Us",
+        link: "/contact_us",
+    },
+];
 
 export const faq_questions = [
     {
