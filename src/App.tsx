@@ -29,15 +29,15 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about_us" element={<AboutUs />} />
-            <Route path="/iphone_repair" element={<IPhoneRepair />} />
-            <Route path="/smartphone_repair" element={<SmartphoneRepair />} />
+            <Route path="/:id" element={<IPhoneRepair />} />
+            {/* <Route path="/smartphone_repair" element={<SmartphoneRepair />} />
             <Route path="/ipadtablet_repair" element={<IPadTabletRepair />} />
             <Route path="/macbook_repair" element={<MacbookRepair />} />
             <Route path="/laptop_repair" element={<LaptopRepair />} />
             <Route path="/logicboard_repair" element={<LogicBoardRepair />} />
             <Route path="/liquiddamege_repair" element={<LiquidDamageRepair />} />
             <Route path="/gamingconsole_repair" element={<GamingConsoleRepair />} />
-            <Route path="/otherelectronic_repair" element={<OtherElectronicsRepair />} />
+            <Route path="/otherelectronic_repair" element={<OtherElectronicsRepair />} /> */}
             <Route path="/faq" element={<FAQ />} />
             <Route path="/contact_us" element={<ContactUs />} />
           </Routes>
