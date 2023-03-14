@@ -104,7 +104,7 @@ export const faq_questions = [
     },
     {
         id: 2,
-        title: "IPhone/Phone Repairs",
+        title: "IPhone/Smartphone Repairs",
         questions: [
             {
                 id: 2.1,
