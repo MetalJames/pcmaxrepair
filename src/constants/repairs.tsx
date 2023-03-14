@@ -1,4 +1,4 @@
-import { iphonerepair, smartphonerepair, ipadtabletrepair, macbookrepair, laptoprepair } from "../assets";
+import { iphonerepair, smartphonerepair, ipadtabletrepair, macbookrepair, laptoprepair, logicboardrepair } from "../assets";
 
 export const repairs = [
     {
@@ -245,6 +245,53 @@ export const repairs = [
             }
         ],
         image: laptoprepair,
+    },
+    {
+        id: 'logicboard_repair',
+        title: "Logic Board / Motherboard Repair",
+        description: "Logic Board failure can be a challenging task to take care of. Here, at MaxRepair we can dill with it!",
+        extradescription: "We are specialized in microsoldering and any components replacement in Apple, Gigabyte, Asus, Acer, Lenovo, Dell, MSI, HP, and many others logic boards",
+        listTitle: "We can troubleshoot and FIX many logic board issues like:",
+        listofrepairs: [
+            {
+                id: 1,
+                repair: "Your device is not powering up at all, not giving any sense of life",
+            },
+            {
+                id: 2,
+                repair: "Randomly crashing and restarting, or turning off itself",
+            },
+            {
+                id: 3,
+                repair: "Overheating and getting laggy, freezing when playing games or doing some heavy stuff",
+            },
+            {
+                id: 4,
+                repair: "No backlight/image on the screen",
+            },
+            {
+                id: 5,
+                repair: "Not recognizing battery or battery not charging",
+            },
+            {
+                id: 6,
+                repair: "USB ports, and HDMI port not working",
+            },
+            {
+                id: 7,
+                repair: "Any other microsoldering repairs that your faulty logic board can require",
+            },
+        ],
+        logicboardfailure: "If one component fails it usually cause the whole motherboard to fails. Replacing the faulty components is not as easy it may sound because. To be able to do that one has to know which IC (integrated chip) or filter is faulty.",
+        inquiry: [
+            {
+                id: 1,
+                description: "For any inquiry, don’t hesitate to give us a call or send us an email:",
+                phonenumber: "905 517 9610",
+                email: "mailto:max@pcmaxrepair.ca",
+            }
+        ],
+        image: logicboardrepair,
     },
 ]
 
