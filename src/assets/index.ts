@@ -8,6 +8,8 @@ import ipadtabletrepair from './ipadtabletrepair.png';
 import logicboardrepair from './logicboardrepair.png';
 import liquiddamangerepair from './liquiddamangerepair.png';
 import playstationrepair from './playstationrepair.png';
+import nintendoswitchrepair from './nintendoswitchrepair.png';
+import xboxrepair from './xboxrepair.png';
 
 export {
     close,
@@ -20,4 +22,6 @@ export {
     logicboardrepair,
     liquiddamangerepair,
     playstationrepair,
+    nintendoswitchrepair,
+    xboxrepair,
 };
