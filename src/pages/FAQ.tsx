@@ -26,9 +26,14 @@ const FAQ = () => {
 
     return (
         <Fragment>
+            <div>
+                <h1 className='font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full text-center pb-10'>
+                    Frequently Asked Question
+                </h1>
+            </div>
             {faq_questions.map(({id, title, questions}) => 
                 <div key={id} className='flex flex-col min-h-[140px] w-full lg:w-3/5 overflow-x-scroll rounded-lg p-10 lg:overflow-visible'>
-                    <h1>{title}</h1>
+                    <h1 className='font-poppins font-semibold text-[20px] leading-[32px]'>{title}</h1>
                     {questions.map(({id, question, answer}) => 
                         <div key={id}>
                             <Accordion open={open === id} icon={<Icon id={id} open={open} />} 

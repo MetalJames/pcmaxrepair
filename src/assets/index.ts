@@ -6,6 +6,8 @@ import macbookrepair from './macbookrepair.png';
 import laptoprepair from './Max_Repair_web-10.jpg';
 import ipadtabletrepair from './ipadtabletrepair.png';
 import logicboardrepair from './logicboardrepair.png';
+import liquiddamangerepair from './liquiddamangerepair.png';
+import playstationrepair from './playstationrepair.png';
 
 export {
     close,
@@ -16,4 +18,6 @@ export {
     laptoprepair,
     ipadtabletrepair,
     logicboardrepair,
+    liquiddamangerepair,
+    playstationrepair,
 };

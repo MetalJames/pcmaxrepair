@@ -3,10 +3,10 @@ import AboutUsImg from "../assets/Max_Repair_web-13.jpg";
 
 const AboutUs = () => {
     return (
-        <div className='flex md:flex-row flex-col sm:py-16 py-6 px-24'>
-            <div className='flex-1 flex justify-center items-start flex-col'>
-                <h1 className='font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full'>About Us</h1>
-                <p className='font-poppins font-normal text-[18px] leading-[30.8px] max-w-[470px] mt-5'>
+        <div className='sm:py-16 py-6 sm:px-24 px-10'>
+            <h1 className='font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full text-center sm:pb-10 pb-2'>About Us</h1>
+            <div className='flex sm:flex-row flex-col-reverse flex-1 justify-between items-center'>
+                <p className='font-poppins font-normal text-[18px] leading-[30.8px] max-w-[420px] mt-5'>
                     Hi there. We are MaxRepair, an Electronics repair store in Port
                     Credit, Mississauga. Our Google review will tell you about us much
                     better than we can! But in any case, we are the friendly repair store
@@ -17,10 +17,7 @@ const AboutUs = () => {
                     bring us your device! If you have any questions - just give us a call
                     at (905) 517-9610!
                 </p>
-                {/* <div className='py-4 px-6 font-poppins font-medium text-[18px] text-dimWhite bg-black rounded-[10px] outline-none mt-10'>Learn More</div> */}
-            </div>
-            <div className='flex-1 flex justify-center items-center md:ml-10 ml-0 md:mt-0 mt-10 relative'>
-                <img src={AboutUsImg} alt='about us maxrepair img' className='w-[100%] h-[auto]'/>
+                <img src={AboutUsImg} alt='about us maxrepair img' className='sm:w-[50%] sm:h-[50%] w-[100%] h-[100%] sm:pb-0 pb-6'/>
             </div>
         </div>
     )

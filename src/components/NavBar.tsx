@@ -40,7 +40,7 @@ const Navbar = () => {
                     </div>
                 ))}
             </ul>
-            <div className='sm:hidden flex flex-1 justify-between items-center'>
+            <div className='sm:hidden flex flex-1 justify-between items-center px-10'>
                 <Link to='/'>
                     Home
                 </Link>
@@ -52,7 +52,7 @@ const Navbar = () => {
                 p-6 bg-[#fefefe] absolute top-[15%] right-5 mx-4 my-2 min-w-[140px] rounded-xl sidebar z-50`}
                 >
                     <ul key={1} className='list-none flex flex-col flex-1'>
-                        {navLinks.map(({ id, title, link, links }) => (
+                        {navLinks.filter(link => link.id != 'home').map(({ id, title, link, links }) => (
                             <div key={id}>
                             {'services' === id ? 
                                 <li className='mr-10' onClick={() => setOpen((prev) => (!prev))}>

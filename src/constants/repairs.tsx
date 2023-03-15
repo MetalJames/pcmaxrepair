@@ -1,4 +1,4 @@
-import { iphonerepair, smartphonerepair, ipadtabletrepair, macbookrepair, laptoprepair, logicboardrepair } from "../assets";
+import { iphonerepair, smartphonerepair, ipadtabletrepair, macbookrepair, laptoprepair, logicboardrepair, liquiddamangerepair, playstationrepair } from "../assets";
 
 export const repairs = [
     {
@@ -142,7 +142,6 @@ export const repairs = [
         id: 'macbook_repair',
         title: "MacBook Repair",
         description: "At MAX REPAIR, you can get help with simple upgrades on your mac to a motherboard level repairs.",
-        extradescription: "We are specialized in Samsung, Huawei, Xiaomi, Google, and OnePlus.",
         listTitle: "We can troubleshoot and FIX in any MAC:",
         listofrepairs: [
             {
@@ -292,6 +291,102 @@ export const repairs = [
             }
         ],
         image: logicboardrepair,
+    },
+    {
+        id: 'liquiddamege_repair',
+        title: "Liquid Damage Repair",
+        description: "Liquid damage reapir(cleaning) require special tools(ultrasonic cleaner, isopropil alcohol, ect) and has to be done in short manner of time. As long you wait as less chances you have to fix your device.",
+        extradescription: "In any situation involving the submersion or splashing of an electronic device in any liquid, the first step is to disconnect any power source as soon as this is safely possible.",
+        listTitle: "We can clean your divece and FIX liquid damage:",
+        listofrepairs: [
+            {
+                id: 1,
+                repair: "Your device is not powering up at all, not giving any sense of life",
+            },
+            {
+                id: 2,
+                repair: "Randomly crashing and restarting, or turning off itself",
+            },
+            {
+                id: 3,
+                repair: "Overheating and getting laggy, freezing when playing games or doing some heavy stuff",
+            },
+            {
+                id: 4,
+                repair: "No backlight/image on the screen",
+            },
+            {
+                id: 5,
+                repair: "Not recognizing battery or battery not charging",
+            },
+            {
+                id: 6,
+                repair: "USB ports, and HDMI port not working",
+            },
+            {
+                id: 7,
+                repair: "Any other microsoldering repairs that your faulty logic board can require",
+            },
+        ],
+        logicboardfailure: "If one component fails it usually cause the whole motherboard to fails. Replacing the faulty components is not as easy it may sound because. To be able to do that one has to know which IC (integrated chip) or filter is faulty.",
+        inquiry: [
+            {
+                id: 1,
+                description: "For any inquiry, don’t hesitate to give us a call or send us an email:",
+                phonenumber: "905 517 9610",
+                email: "mailto:max@pcmaxrepair.ca",
+            }
+        ],
+        image: liquiddamangerepair,
+    },
+    {
+        id: 'gamingconsole_repair',
+        title: "PlayStaion Repair",
+        description: "At MAX REPAIR, you can repair your PS4, PS4, PS3 the same day",
+        listTitle: "We can fix:",
+        listofrepairs: [
+            {
+                id: 1,
+                repair: "Software issue, not booting up issue",
+            },
+            {
+                id: 2,
+                repair: "HDMI replacement, USB port repair",
+            },
+            {
+                id: 3,
+                repair: "Overheating and getting laggy, freezing when playing games or doing some heavy stuff",
+            },
+            {
+                id: 4,
+                repair: "No power issue (power supply replacement)",
+            },
+            {
+                id: 5,
+                repair: "Game reading issue repair (lens/laser/disk drive replacement)",
+            },
+            {
+                id: 6,
+                repair: "Controller not connecting to the console repair, WIFI repair",
+            },
+            {
+                id: 7,
+                repair: "Motherboard related issue repair, liquid damage repairs",
+            },
+            {
+                id: 8,
+                repair: "Controller repair (micro USB port damaged, buttons not working)",
+            },
+        ],
+        inquiry: [
+            {
+                id: 1,
+                description: "For any inquiry, don’t hesitate to give us a call or send us an email:",
+                phonenumber: "905 517 9610",
+                email: "mailto:max@pcmaxrepair.ca",
+            }
+        ],
+        image: playstationrepair,
     },
 ]
 
