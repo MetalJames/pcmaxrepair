@@ -1,7 +1,7 @@
 import { MdPhoneIphone, MdPhoneAndroid, MdLaptopMac, MdLaptopWindows, MdMemory, MdTabletMac, MdOutlineWaterDrop, MdOutlineVideogameAsset, MdDevicesOther, MdCheck } from 'react-icons/md';
 import { apple, google, microsoft, nintendo, playstation, samsung, xbox } from '../assets/brandswecanfix';
-import { AboutUsImg } from '../assets';
-import { computerrepairfaq, generalquestion, iphonerepair } from '../assets';
+import { AboutUsImg, logicboardrepair, playstationrepair, nintendoswitchrepair } from '../assets';
+import { computerrepairfaq, generalquestion, iphonerepair, sliderps4 } from '../assets';
 
 export const navLinks = [
     {
@@ -105,6 +105,33 @@ export const openhours = [
     {
         id: 'Sunday',
         hours: '10:00 AM – 3:00 PM',
+    },
+]
+
+export const slidercontent = [
+    {
+        id: 'repair_iphone',
+        title: 'iPhone Repair < br /> Port Creadit',
+        description: 'What needs to be done - we can do! Any repair on iPhones in Port Credit',
+        img: iphonerepair,
+    },
+    {
+        id: 'repair_logicboard',
+        title: 'Logic Board Repair < br /> Port Creadit',
+        description: 'What needs to be done - we can do! Any repair on iPhones in Port Credit',
+        img: logicboardrepair,
+    },
+    {
+        id: 'repair_macbooklaptop',
+        title: 'MacBook or Laptop Repair < br /> Port Creadit',
+        description: 'What needs to be done - we can do! Any repair on iPhones in Port Credit',
+        img: computerrepairfaq,
+    },
+    {
+        id: 'repair_console',
+        title: 'Gaming Console Repair < br /> Port Creadit',
+        description: 'What needs to be done - we can do! Any repair on iPhones in Port Credit',
+        img: sliderps4,
     },
 ]
 

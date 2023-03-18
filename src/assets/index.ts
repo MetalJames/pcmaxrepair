@@ -13,6 +13,7 @@ import xboxrepair from './xboxrepair.png';
 import AboutUsImg from '../assets/Max_Repair_web-13.jpg';
 import computerrepairfaq from '../assets/computerrepairfaq.png';
 import generalquestion from '../assets/generalquestion.png';
+import sliderps4 from '../assets/sliderps4.jpg';
 
 export {
     close,
@@ -29,5 +30,6 @@ export {
     xboxrepair,
     AboutUsImg,
     computerrepairfaq,
-    generalquestion
+    generalquestion,
+    sliderps4
 };
