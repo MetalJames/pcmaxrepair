@@ -49,7 +49,7 @@ const Navbar = () => {
                     onClick={() => setToggle((prev) => (!prev))}
                 />
                 <div className={`${toggle ? 'flex' : 'hidden'}
-                p-6 bg-[#fefefe] absolute top-[15%] right-5 mx-4 my-2 min-w-[140px] rounded-xl sidebar z-50`}
+                p-6 bg-[#c7c7c7] absolute top-[13%] right-5 mx-4 my-2 min-w-[140px] rounded-xl sidebar z-50`}
                 >
                     <ul key={1} className='list-none flex flex-col flex-1'>
                         {navLinks.filter(link => link.id != 'home').map(({ id, title, link, links }) => (

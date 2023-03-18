@@ -1,5 +1,7 @@
 import { MdPhoneIphone, MdPhoneAndroid, MdLaptopMac, MdLaptopWindows, MdMemory, MdTabletMac, MdOutlineWaterDrop, MdOutlineVideogameAsset, MdDevicesOther, MdCheck } from 'react-icons/md';
 import { apple, google, microsoft, nintendo, playstation, samsung, xbox } from '../assets/brandswecanfix';
+import { AboutUsImg } from '../assets';
+import { computerrepairfaq, generalquestion, iphonerepair } from '../assets';
 
 export const navLinks = [
     {
@@ -75,32 +77,42 @@ export const navLinks = [
     },
 ];
 
+export const aboutus = [
+    {
+        id: 'about-us',
+        title: 'About Us',
+        description: 'Hi there. We are MaxRepair, an Electronics repair store in Port Credit, Mississauga. Our Google review will tell you about us much better than we can! But in any case, we are the friendly repair store that can help you at any time you need this the most. We can take care of your gadgets in no time. With 20+ years of experience, we can provide you with the best solution possible out there. We are located at 106 Lakeshore Road East, Mississauga, ON, L5G 1E3, so dont wait and bring us your device! If you have any questions - just give us a call at (905) 517-9610!',
+        img: AboutUsImg,
+    },
+]
+
 export const faq_questions = [
     {
         id: 1,
         title: "Computer/Laptop/MacBook Repair",
         questions: [
             {
-                id: 1,
+                id: 1.1,
                 question: "My computer is too old. I just want to get the information off it. Can you help?",
                 answer: "Yes! We can transfer information to external drive. We do specialize in data transfers and data recovery as well."
             },
             {
-                id: 2,
+                id: 1.2,
                 question: "My screen is broken on my macbook/laptop. Can you fix it?",
                 answer: "Yes! As long as we can source the screen for your macbook/laptop, we can fix it."
             },
             {
-                id: 3,
+                id: 1.3,
                 question: "I spilled water on my laptop/macbook. Is there a hope?",
                 answer: "Yes! We can fix liquid damage logicboards/motherboards at a high success rate. All our repairs have warranty as well."
             },
             {
-                id: 4,
+                id: 1.4,
                 question: "My laptop hinge is broken. I cannot open or close my computer properly. Is that something you can fix?",
                 answer: "Yes! We can fix it or replace it. It depent how badly its damaged but, YES, we can do that!"
             },
-        ]
+        ],
+        img: computerrepairfaq,
     },
     {
         id: 2,
@@ -131,7 +143,8 @@ export const faq_questions = [
                 question: "I dropped my phone in water. what are my options?",
                 answer: "Yes. we can fix water damage devices. Depending on the severity of the damage, we either will be able to fix the device completely, or at least get out the information you dearly need from your device. Again, we are a no fix no fee place. If we cant fix it for any reason, you dont pay."
             },
-        ]
+        ],
+        img: iphonerepair,
     },
     {
         id: 3,
@@ -177,7 +190,8 @@ export const faq_questions = [
                 question: "What are your store hours?",
                 answer: "We are open Mon:10:00 AM - 2:00 PM, Tue to Fri:9:00 AM - 6:00 PM, Sat:10:00 AM - 4:00 PM, and also Sun:10:00 AM - 3:00 PM"
             },
-        ]
+        ],
+        img: generalquestion,
     },
 ];
 
@@ -185,37 +199,41 @@ export const whychooseus = [
     {
         id: 'why-choose-us-1',
         title: 'Free Diagnostics',
-        description: 'Bring your device to our store and get a free diagnosis of your gadget.',
+        description: 'Estimate cost of repair for free!',
+        // description: 'Bring your device to our store and get a free diagnosis of your gadget.',
         logo: MdCheck,
     },
-    {
-        id: 'why-choose-us-2',
-        title: 'On the Spot Service',
-        description: 'We offer on spot services for a lot of minor issues like battery replacement and general breakdowns.',
-        logo: MdCheck,
-    },
+    // {
+    //     id: 'why-choose-us-2',
+    //     title: 'On the Spot Service',
+    //     description: 'We offer on spot services for a lot of minor issues like battery replacement and general breakdowns.',
+    //     logo: MdCheck,
+    // },
     {
         id: 'why-choose-us-3',
         title: 'Warranties on Services / Repairs',
-        description: 'Services and repairs come with warranties to help you get best experience possible.',
+        description: 'We provide warranty for our services and repairs.',
+        // description: 'Services and repairs come with warranties to help you get best experience possible.',
         logo: MdCheck,
     },
-    {
-        id: 'why-choose-us-4',
-        title: 'Quality Parts',
-        description: 'All our parts from reliable sources and always come.',
-        logo: MdCheck,
-    },
+    // {
+    //     id: 'why-choose-us-4',
+    //     title: 'Quality Parts',
+    //     description: 'All our parts from reliable sources and always come.',
+    //     logo: MdCheck,
+    // },
     {
         id: 'why-choose-us-5',
         title: 'REFERRED BY MANY',
-        description: 'With our happy customers, we are getting a lot of referrals, check out our reviews on Google.',
+        // description: 'With our happy customers, we are getting a lot of referrals, check out our reviews on Google.',
+        description: 'Check out our reviews on Google.',
         logo: MdCheck,
     },
     {
         id: 'why-choose-us-6',
         title: 'No fix - no fee!',
-        description: 'We always can provide you with the solution but if it is too expensive or you dont want to fix it - you dont pay.',
+        description: 'If your device unrepairable - you dont pay.',
+        // description: 'We always can provide you with the solution but if it is too expensive or you dont want to fix it - you dont pay.',
         logo: MdCheck,
     },
 ];
@@ -226,54 +244,64 @@ export const ourservices = [
         title: 'iPhone Repair',
         description: 'At MAX REPAIR, you can get help with your iPhone in no time.',
         logo: MdPhoneIphone,
+        link: '/iphone_repair',
     },
     {
         id: 'our-services-2',
         title: 'Smartphone Repair',
         description: 'We offer on spot services for a lot of minor issues like battery replacement and general breakdowns.',
         logo: MdPhoneAndroid,
+        link: '/smartphone_repair',
     },
     {
         id: 'our-services-3',
         title: 'iPad / Tablet Repair',
+        // description: 'Whether your iPad or Tablet has a broken screen or maybe your battery no longer holds the charge, or you have software issues, or any other issue that interrupts smooth performance, we will take care of it.',
         description: 'Whether your iPad or Tablet has a broken screen or maybe your battery no longer holds the charge, or you have software issues, or any other issue that interrupts smooth performance, we will take care of it.',
         logo: MdTabletMac,
+        link: '/ipadtablet_repair',
     },
     {
         id: 'our-services-4',
         title: 'Macbook Repair',
         description: 'At MAX REPAIR, you can get help with simple upgrades on your mac to a motherboard level repairs.',
         logo: MdLaptopMac,
+        link: '/macbook_repair',
     },
     {
         id: 'our-services-5',
         title: 'Laptop Repair',
         description: 'We are specialized in Asus, Acer, Lenovo, Dell, Toshiba, Chromebook, MSI, HP, and any other brands.',
         logo: MdLaptopWindows,
+        link: '/laptop_repair',
     },
     {
         id: 'our-services-6',
         title: 'Logic Board Repair',
         description: 'With 20+ years of expirience we have very high success rate of repair logic board. Bring it in - and we will help',
         logo: MdMemory,
+        link: '/logicboard_repair',
     },
     {
         id: 'our-services-7',
         title: 'Liquid Damage Repair',
         description: 'We can fix liquid damage logicboards/motherboards at a high success rate.',
         logo: MdOutlineWaterDrop,
+        link: '/liquiddamege_repair',
     },
     {
         id: 'our-services-8',
         title: 'Gaming Console Repair',
         description: 'At MAX REPAIR, you can repair your PS4, Nintendo, XBOX the same day.',
         logo: MdOutlineVideogameAsset,
+        link: '/gamingconsole_repair',
     },
     {
         id: 'our-services-9',
         title: 'Other Electronics Repair',
         description: 'If you can not see your device in the listing, no worries - give us a call and ask, we will be able to help you',
         logo: MdDevicesOther,
+        link: '/otherelectronic_repair',
     },
 ];
 

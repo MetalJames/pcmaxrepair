@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import { repairs } from '../../constants/repairs';
 import { MdCheckCircle } from "react-icons/md";
@@ -8,11 +8,21 @@ import { MdAlternateEmail} from "react-icons/md";
 const IPhoneRepair = () => {
 
     const params = useParams();
-    console.log(repairs)
-    console.log(params)
+    // console.log(repairs)
+    // console.log(params)
+
+    // add divRef here
+    const divRef = useRef<any>();
+
+    // add useEffect and set timer for 1 second to let load content and scroll page to top
+    useEffect(() => {
+        // setTimeout(() => divRef.current.scrollIntoView({ behavior: 'smooth' }), 700);
+        // divRef.current.scrollIntoView({ behavior: 'smooth' });
+        window.scrollTo(0, 0);
+    });
 
     return (
-        <div>
+        <div ref={divRef}>
             {repairs.filter(repair => repair.id === params.id).map((repair) => (
                 <div key={repair.id} className='flex flex-col justify-between sm:px-24 px-10'>
                     <h1 className='font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full text-center sm:pb-10 pb-2'>{repair.title}</h1>
