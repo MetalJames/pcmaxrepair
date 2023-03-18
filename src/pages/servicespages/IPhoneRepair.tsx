@@ -12,7 +12,7 @@ const IPhoneRepair = () => {
     // console.log(params)
 
     // add divRef here
-    const divRef = useRef<any>();
+    // const divRef = useRef<any>();
 
     // add useEffect and set timer for 1 second to let load content and scroll page to top
     useEffect(() => {
@@ -22,7 +22,8 @@ const IPhoneRepair = () => {
     });
 
     return (
-        <div ref={divRef}>
+        // <div ref={divRef}>
+        <div>
             {repairs.filter(repair => repair.id === params.id).map((repair) => (
                 <div key={repair.id} className='flex flex-col justify-between sm:px-24 px-10'>
                     <h1 className='font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full text-center sm:pb-10 pb-2'>{repair.title}</h1>

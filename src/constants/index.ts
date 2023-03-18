@@ -77,6 +77,37 @@ export const navLinks = [
     },
 ];
 
+export const openhours = [
+    {
+        id: 'Monday',
+        hours: '10:00 AM – 2:00 PM',
+    },
+    {
+        id: 'Tuesday',
+        hours: '9:00 AM – 6:00 PM',
+    },
+    {
+        id: 'Wednesday',
+        hours: '9:00 AM – 6:00 PM',
+    },
+    {
+        id: 'Thursday',
+        hours: '9:00 AM – 6:00 PM',
+    },
+    {
+        id: 'Friday',
+        hours: '9:00 AM – 6:00 PM',
+    },
+    {
+        id: 'Saturday',
+        hours: '10:00 AM – 4:00 PM',
+    },
+    {
+        id: 'Sunday',
+        hours: '10:00 AM – 3:00 PM',
+    },
+]
+
 export const aboutus = [
     {
         id: 'about-us',

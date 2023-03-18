@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import "./navbar.css";
-import { navLinks } from '../constants';
+import { navLinks, openhours } from '../constants';
 import { close, menu } from '../assets';
 
 const Navbar = () => {
 
     const [open, setOpen] = useState(false);
     const [toggle, setToggle] = useState(false);
+    const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    const date = new Date();
+    let openday = weekday[date.getDay()];
+    console.log(openday);
 
     return (
         <nav className='w-full flex py-6 justify-between items-center navbar'>
@@ -44,7 +48,11 @@ const Navbar = () => {
                 <Link to='/'>
                     Home
                 </Link>
-                <p>Today open until 5</p>
+                {openhours.filter(day => day.id === openday).map((day) => (
+                    <div key={day.id} className='flex flex-col items-center justify-center'>
+                        <p>Today open</p>{day.hours}
+                    </div>
+                ))}
                 <img src={toggle ? close : menu} alt='menu' className='w-[28px] h-[28px] object-contain'
                     onClick={() => setToggle((prev) => (!prev))}
                 />
