@@ -16,16 +16,17 @@ import {
   GamingConsoleRepair,
   OtherElectronicsRepair,
 } from "./pages/servicespages";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
+    <div className='flex flex-col h-screen'>
       <BrowserRouter>
         <header>
           <Banner />
           <NavBar />
         </header>
-        <main>
+        <main className='flex-grow'>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about_us" element={<AboutUs />} />
@@ -42,8 +43,9 @@ function App() {
             <Route path="/contact_us" element={<ContactUs />} />
           </Routes>
         </main>
+        <Footer />
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 

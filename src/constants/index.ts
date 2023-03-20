@@ -2,6 +2,7 @@ import { MdPhoneIphone, MdPhoneAndroid, MdLaptopMac, MdLaptopWindows, MdMemory, 
 import { apple, google, microsoft, nintendo, playstation, samsung, xbox } from '../assets/brandswecanfix';
 import { AboutUsImg, logicboardrepair, playstationrepair, nintendoswitchrepair } from '../assets';
 import { computerrepairfaq, generalquestion, iphonerepair, sliderps4 } from '../assets';
+import { slideriphone, sliderlogicboard, slidermacbook, sliderplaystation } from '../assets/sliderimg';
 
 export const navLinks = [
     {
@@ -111,27 +112,31 @@ export const openhours = [
 export const slidercontent = [
     {
         id: 'repair_iphone',
-        title: 'iPhone Repair < br /> Port Creadit',
+        title: 'iPhone Repair Port Creadit',
         description: 'What needs to be done - we can do! Any repair on iPhones in Port Credit',
-        img: iphonerepair,
+        img: slideriphone,
+        link: '/iphone_repair',
     },
     {
         id: 'repair_logicboard',
-        title: 'Logic Board Repair < br /> Port Creadit',
+        title: 'Logic Board Repair Port Creadit',
         description: 'What needs to be done - we can do! Any repair on iPhones in Port Credit',
-        img: logicboardrepair,
+        img: sliderlogicboard,
+        link: '/logicboard_repair',
     },
     {
         id: 'repair_macbooklaptop',
-        title: 'MacBook or Laptop Repair < br /> Port Creadit',
+        title: 'MacBook or Laptop Repair Port Creadit',
         description: 'What needs to be done - we can do! Any repair on iPhones in Port Credit',
-        img: computerrepairfaq,
+        img: slidermacbook,
+        link: '/macbook_repair',
     },
     {
         id: 'repair_console',
-        title: 'Gaming Console Repair < br /> Port Creadit',
+        title: 'Gaming Console Repair Port Creadit',
         description: 'What needs to be done - we can do! Any repair on iPhones in Port Credit',
-        img: sliderps4,
+        img: sliderplaystation,
+        link: '/gamingconsole_repair',
     },
 ]
 

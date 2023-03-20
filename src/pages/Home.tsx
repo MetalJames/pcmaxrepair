@@ -5,6 +5,7 @@ import WhyChooseUs from '../components/WhyChooseUs';
 import OurServices from '../components/OurServices';
 // import IphoneRepair from '../components/IphoneRepair';
 import BrandsWeCanFix from '../components/BrandsWeCanFix';
+import Reviews from '../components/Reviews';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <OurServices />
             {/* <IphoneRepair /> */}
             <BrandsWeCanFix />
+            <Reviews />
         </div>
     );
 }
