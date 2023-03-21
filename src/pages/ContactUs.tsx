@@ -127,7 +127,7 @@ const ContactUs = () => {
     };
 
     return (
-        <div className='flex flex-col justify-between sm:px-24 px-10 sm:py-16 py-6'>
+        <div className='flex flex-col justify-between sm:px-24 px-10 sm:py-4 py-2'>
             {/* <div className='flex flex-col items-center'> */}
                 <h1 className='font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full text-center sm:pb-10 pb-2'>
                     {/* <span>

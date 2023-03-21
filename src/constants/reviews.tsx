@@ -7,9 +7,9 @@ export const reviews = [
     },
     {
         id: 2,
-        postedon: '6 months ago',
-        review: 'My laptop wouldnt start properly and Max figured out it was an issue with my motherboard. He worked on a number of fixes before the only option left was to replace part of the motherboard. Max kept me updated on what he was working on and found me a great deal on the motherboard part. He even fixed my screen which had popped out of place from a drop a few months ago. I recommend Max to anyone with computer issues.',
-        name: 'Catherine Lupinski',
+        postedon: 'a months ago',
+        review: 'Nintendo Switch wasnt displaying on TV, brought it here and within 24 hours it was fixed, fried USB-C port and display chip.  Great Service, will definitely recommend.',
+        name: 'Matt Eitel',
     },
     {
         id: 3,

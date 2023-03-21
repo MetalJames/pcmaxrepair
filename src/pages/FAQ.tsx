@@ -25,18 +25,19 @@ const FAQ = () => {
     };
 
     return (
-        <div className='sm:px-24 px-10 sm:py-16 py-6'>
+        <div className='sm:px-24 px-6 sm:py-4 py-2'>
             <Fragment>
                 <h1 className='font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full text-center pb-10'>
                     Frequently Asked Question
                 </h1>
                 {faq_questions.map(({id, title, questions, img}) =>
-                <div key={id} className='flex flex-col justify-between sm:px-24 px-10 sm:pb-10'>
+                <div key={id} className='flex flex-col justify-between'>
                     {/* <div key={id} className='flex flex-col min-h-[140px] w-full lg:w-3/5 overflow-x-scroll rounded-lg p-10 lg:overflow-visible'> */}
-                    <div className='flex sm:flex-row flex-col-reverse min-h-[140px] w-full overflow-x-scroll rounded-lg lg:overflow-visible justify-between items-center'>
+                    <div className='flex sm:flex-row flex-col-reverse min-h-[140px] w-full overflow-x-scroll rounded-lg lg:overflow-visible justify-between items-center sm:pb-0 pb-8'>
                         <div>
                             <h1 className='font-poppins font-semibold text-[20px] leading-[32px]'>{title}</h1>
                             {questions.map(({id, question, answer}) => 
+                                // <div key={id} className='xxs:max-w-[250px] xs:max-w-[350px] sm:max-w-[500px] xl:max-w-[620px]'>
                                 <div key={id} className='xxs:max-w-[270px] sm:max-w-[500px] xl:max-w-[620px]'>
                                     <Accordion open={open === id} icon={<Icon id={id} open={open} />} 
                                         className='block relative w-full'>
