@@ -18,7 +18,7 @@ const Services = () => {
             {repairs.filter(repair => repair.id === params.id).map((repair) => (
                 <div key={repair.id} className='flex flex-col justify-between sm:px-24 px-10 sm:py-4 py-2'>
                     <h1 className='font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full text-center sm:pb-10 pb-2'>{repair.title}</h1>
-                    <div className='flex sm:flex-row flex-col-reverse flex-1 justify-between items-center'>
+                    <div className='flex sm:flex-row flex-col-reverse flex-1 justify-between items-center pb-8'>
                         <div className='max-w-[420px]'>
                             <p className='font-poppins font-semibold text-[20px] leading-[32px]'>{repair.description}</p>
                             {repair.extradescription && <p className='font-poppins font-normal text-[16px] leading-[24px] mt-4 flex items-center'>{repair.extradescription}</p>}

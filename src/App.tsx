@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Banner, NavBar, Services, Footer } from "./components";
-import { ContactUs, AboutUs, Home, FAQ } from "./pages";
+import { Banner, NavBar, Footer } from "./components";
+import { ContactUs, AboutUs, Home, FAQ, Services } from "./pages";
 
 function App() {
   return (

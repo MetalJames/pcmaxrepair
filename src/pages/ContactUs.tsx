@@ -127,7 +127,7 @@ const ContactUs = () => {
     };
 
     return (
-        <div className='flex flex-col justify-between sm:px-24 px-10 sm:py-4 py-2'>
+        <div className='flex flex-col justify-between sm:px-24 px-6 sm:py-4 py-2'>
             {/* <div className='flex flex-col items-center'> */}
                 <h1 className='font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full text-center sm:pb-10 pb-2'>
                     {/* <span>
@@ -145,8 +145,8 @@ const ContactUs = () => {
                     {/* </span> */}
                 </h1>
             {/* </div> */}
-            <div className='h-full flex justify-center flex-col'>
-                <div className='sm:w-2/3 w-[90%] m-auto sm:p-8 p-4 shadow-lg'>
+            <div className='h-full flex justify-center flex-col pb-8'>
+                <div className='sm:w-2/3 w-[100%] sm:m-auto m-0 sm:p-8 p-3 shadow-lg'>
                     {message && (
                         <div className={`my-4 text-white w-full p-4 ${message.class}`}>
                             {message.text}

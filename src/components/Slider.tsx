@@ -26,13 +26,13 @@ const Slider = () => {
     };
 
     return (
-        <SliderSlick {...settings} >
+        <SliderSlick {...settings} className='mb-10'>
                 {slidercontent.map((slide) => (
                     <div key={slide.id}>
                         <div className={`flex w-full justify-between sm:items-stretch items-center
                         ${slide.id === 'repair_logicboard' || slide.id === 'repair_console' ? 'sm:flex-row-reverse flex-col-reverse' : 'sm:flex-row flex-col-reverse'}`}>
                             <div className='flex flex-col w-full justify-around items-center'>
-                                <h3 className='font-poppins font-semibold xs:text-[48px] text-[32px] xs:leading-[76.8px] leading-[32px] sm:w-full w-[80%] sm:py-0 py-4 text-center'>
+                                <h3 className='font-poppins font-semibold xs:text-[48px] text-[32px] xs:leading-[76.8px] leading-[32px] sm:w-[75%] w-[80%] sm:py-0 py-4 text-center'>
                                     {slide.title}
                                 </h3>
                                 <p className='font-poppins font-light text-[18px] leading-[30px] text-center sm:w-full w-[80%] sm:pb-0 pb-4'>{slide.description}</p>

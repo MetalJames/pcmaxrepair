@@ -31,14 +31,14 @@ const FAQ = () => {
                     Frequently Asked Question
                 </h1>
                 {faq_questions.map(({id, title, questions, img}) =>
-                <div key={id} className='flex flex-col justify-between'>
+                <div key={id} className='flex flex-col justify-between pb-8'>
                     {/* <div key={id} className='flex flex-col min-h-[140px] w-full lg:w-3/5 overflow-x-scroll rounded-lg p-10 lg:overflow-visible'> */}
                     <div className='flex sm:flex-row flex-col-reverse min-h-[140px] w-full overflow-x-scroll rounded-lg lg:overflow-visible justify-between items-center sm:pb-0 pb-8'>
-                        <div>
+                        <div className='xxs:max-w-[270px] sm:max-w-[500px] xl:max-w-[620px]'>
                             <h1 className='font-poppins font-semibold text-[20px] leading-[32px]'>{title}</h1>
                             {questions.map(({id, question, answer}) => 
                                 // <div key={id} className='xxs:max-w-[250px] xs:max-w-[350px] sm:max-w-[500px] xl:max-w-[620px]'>
-                                <div key={id} className='xxs:max-w-[270px] sm:max-w-[500px] xl:max-w-[620px]'>
+                                <div key={id}>
                                     <Accordion open={open === id} icon={<Icon id={id} open={open} />} 
                                         className='block relative w-full'>
                                         <AccordionHeader onClick={() => handleOpen(id)} className='flex justify-between w-full py-4 border-b border-b-blue-gray-100 antialiased font-sans text-lg font-semibold leading-snug select-none'>
