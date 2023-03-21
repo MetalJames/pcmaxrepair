@@ -1,9 +1,12 @@
 import React from 'react';
 import { FaPhoneAlt, FaDirections, FaDoorOpen } from "react-icons/fa";
+import { openhours } from "../constants";
 
 const Banner = () => {
 
-    const isMobile = window.innerWidth <= 500;
+    const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    const date = new Date();
+    let openday = weekday[date.getDay()];
 
     return (
         <div className='flex px-4 py-4 sm:px-10 sm:justify-end justify-around items-center bg-slate-100 shadow-md'>
@@ -18,7 +21,11 @@ const Banner = () => {
                 </a>
                 <p className='hidden sm:flex items-center'>
                     <FaDoorOpen size='19' className='nav-linker'/>&nbsp;&nbsp;
-                    Mon To Fri: 9:30AM - 7:30PM | Saturday: 11:00AM to 5:30PM
+                    {openhours.filter(day => day.id === openday).map((day) => (
+                    <div key={day.id} className='flex items-center justify-center'>
+                        <p>Today open</p>&nbsp;&nbsp;{day.hours}
+                    </div>
+                ))}
                 </p>
         </div>
     );

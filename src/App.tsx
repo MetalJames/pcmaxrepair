@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Banner, NavBar, IPhoneRepair, Footer } from "./components";
+import { Banner, NavBar, Services, Footer } from "./components";
 import { ContactUs, AboutUs, Home, FAQ } from "./pages";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about_us" element={<AboutUs />} />
-            <Route path="/:id" element={<IPhoneRepair />} />
+            <Route path="/:id" element={<Services />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/contact_us" element={<ContactUs />} />
           </Routes>

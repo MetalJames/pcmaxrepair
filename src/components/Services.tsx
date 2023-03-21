@@ -1,28 +1,19 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { repairs } from '../constants/repairs';
 import { MdCheckCircle } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdAlternateEmail} from "react-icons/md";
 
-const IPhoneRepair = () => {
+const Services = () => {
 
     const params = useParams();
-    // console.log(repairs)
-    // console.log(params)
 
-    // add divRef here
-    // const divRef = useRef<any>();
-
-    // add useEffect and set timer for 1 second to let load content and scroll page to top
     useEffect(() => {
-        // setTimeout(() => divRef.current.scrollIntoView({ behavior: 'smooth' }), 700);
-        // divRef.current.scrollIntoView({ behavior: 'smooth' });
         window.scrollTo(0, 0);
     });
 
     return (
-        // <div ref={divRef}>
         <div>
             {repairs.filter(repair => repair.id === params.id).map((repair) => (
                 <div key={repair.id} className='flex flex-col justify-between sm:px-24 px-10 sm:py-16 py-6'>
@@ -65,4 +56,4 @@ const IPhoneRepair = () => {
     )
 }
 
-export default IPhoneRepair
+export default Services
