@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
-import { repairs } from '../../constants/repairs';
+import { repairs } from '../constants/repairs';
 import { MdCheckCircle } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdAlternateEmail} from "react-icons/md";

@@ -1,7 +1,6 @@
 import { MdPhoneIphone, MdPhoneAndroid, MdLaptopMac, MdLaptopWindows, MdMemory, MdTabletMac, MdOutlineWaterDrop, MdOutlineVideogameAsset, MdDevicesOther, MdCheck } from 'react-icons/md';
 import { apple, google, microsoft, nintendo, playstation, samsung, xbox } from '../assets/brandswecanfix';
-import { AboutUsImg, logicboardrepair, playstationrepair, nintendoswitchrepair } from '../assets';
-import { computerrepairfaq, generalquestion, iphonerepair, sliderps4 } from '../assets';
+import { computerrepairfaq, generalquestion, iphonerepair, AboutUsImg } from '../assets';
 import { slideriphone, sliderlogicboard, slidermacbook, sliderplaystation } from '../assets/sliderimg';
 
 export const navLinks = [
