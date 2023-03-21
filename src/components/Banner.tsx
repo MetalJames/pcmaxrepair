@@ -19,14 +19,14 @@ const Banner = () => {
                     <FaDirections size='19' className='nav-linker'/>&nbsp;&nbsp;
                     <p>Get Direction</p>
                 </a>
-                <p className='hidden sm:flex items-center'>
+                <div className='hidden sm:flex items-center'>
                     <FaDoorOpen size='19' className='nav-linker'/>&nbsp;&nbsp;
                     {openhours.filter(day => day.id === openday).map((day) => (
                     <div key={day.id} className='flex items-center justify-center'>
                         <p>Today open</p>&nbsp;&nbsp;{day.hours}
                     </div>
                 ))}
-                </p>
+                </div>
         </div>
     );
 }

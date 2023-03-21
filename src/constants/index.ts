@@ -111,28 +111,28 @@ export const openhours = [
 export const slidercontent = [
     {
         id: 'repair_iphone',
-        title: 'iPhone Repair Port Creadit',
+        title: 'iPhone Repair Port Credit',
         description: 'What needs to be done - we can do! Any repair on iPhones in Port Credit',
         img: slideriphone,
         link: '/iphone_repair',
     },
     {
         id: 'repair_logicboard',
-        title: 'Logic Board Repair Port Creadit',
+        title: 'Logic Board Repair Port Credit',
         description: 'What needs to be done - we can do! Any repair on iPhones in Port Credit',
         img: sliderlogicboard,
         link: '/logicboard_repair',
     },
     {
         id: 'repair_macbooklaptop',
-        title: 'MacBook or Laptop Repair Port Creadit',
+        title: 'MacBook or Laptop Repair Port Credit',
         description: 'What needs to be done - we can do! Any repair on iPhones in Port Credit',
         img: slidermacbook,
         link: '/macbook_repair',
     },
     {
         id: 'repair_console',
-        title: 'Gaming Console Repair Port Creadit',
+        title: 'Gaming Console Repair Port Credit',
         description: 'What needs to be done - we can do! Any repair on iPhones in Port Credit',
         img: sliderplaystation,
         link: '/gamingconsole_repair',
@@ -260,42 +260,26 @@ export const faq_questions = [
 export const whychooseus = [
     {
         id: 'why-choose-us-1',
-        title: 'Free Diagnostics',
-        description: 'Estimate cost of repair for free!',
-        // description: 'Bring your device to our store and get a free diagnosis of your gadget.',
-        logo: MdCheck,
-    },
-    // {
-    //     id: 'why-choose-us-2',
-    //     title: 'On the Spot Service',
-    //     description: 'We offer on spot services for a lot of minor issues like battery replacement and general breakdowns.',
-    //     logo: MdCheck,
-    // },
-    {
-        id: 'why-choose-us-3',
-        title: 'Warranties on Services / Repairs',
-        description: 'We provide warranty for our services and repairs.',
-        // description: 'Services and repairs come with warranties to help you get best experience possible.',
-        logo: MdCheck,
-    },
-    // {
-    //     id: 'why-choose-us-4',
-    //     title: 'Quality Parts',
-    //     description: 'All our parts from reliable sources and always come.',
-    //     logo: MdCheck,
-    // },
-    {
-        id: 'why-choose-us-5',
-        title: 'REFERRED BY MANY',
-        // description: 'With our happy customers, we are getting a lot of referrals, check out our reviews on Google.',
-        description: 'Check out our reviews on Google.',
-        logo: MdCheck,
-    },
-    {
-        id: 'why-choose-us-6',
         title: 'No fix - no fee!',
         description: 'If your device unrepairable - you dont pay.',
-        // description: 'We always can provide you with the solution but if it is too expensive or you dont want to fix it - you dont pay.',
+        logo: MdCheck,
+    },
+    {
+        id: 'why-choose-us-2',
+        title: 'Free Diagnostics',
+        description: 'Estimate cost of repair for free!',
+        logo: MdCheck,
+    },
+    {
+        id: 'why-choose-us-3',
+        title: 'Our Warranties',
+        description: 'We provide warranty for our services and repairs.',
+        logo: MdCheck,
+    },
+    {
+        id: 'why-choose-us-4',
+        title: 'REFERRED BY MANY',
+        description: 'Check out our reviews on Google.',
         logo: MdCheck,
     },
 ];
@@ -318,7 +302,6 @@ export const ourservices = [
     {
         id: 'our-services-3',
         title: 'iPad / Tablet Repair',
-        // description: 'Whether your iPad or Tablet has a broken screen or maybe your battery no longer holds the charge, or you have software issues, or any other issue that interrupts smooth performance, we will take care of it.',
         description: 'Whether your iPad or Tablet has a broken screen or maybe your battery no longer holds the charge, or you have software issues, or any other issue that interrupts smooth performance, we will take care of it.',
         logo: MdTabletMac,
         link: '/ipadtablet_repair',
