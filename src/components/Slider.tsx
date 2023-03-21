@@ -16,6 +16,7 @@ import { computerrepairfaq, xboxrepair, playstationrepair, nintendoswitchrepair 
 
 import { slidercontent } from '../constants';
 import { Link } from 'react-router-dom';
+import './style.css'
 
 
 const Slider = () => {
@@ -49,7 +50,7 @@ const Slider = () => {
 
     return (
         // <>
-            <SliderSlick {...settings}>
+            <SliderSlick {...settings} >
                     {slidercontent.map((slide) => (
                         <div key={slide.id}>
                             <div className={`flex w-full justify-between sm:items-stretch items-center
