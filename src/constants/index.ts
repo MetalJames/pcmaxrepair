@@ -1,6 +1,6 @@
 import { MdPhoneIphone, MdPhoneAndroid, MdLaptopMac, MdLaptopWindows, MdMemory, MdTabletMac, MdOutlineWaterDrop, MdOutlineVideogameAsset, MdDevicesOther, MdCheck } from 'react-icons/md';
 import { apple, google, microsoft, nintendo, playstation, samsung, xbox } from '../assets/brandswecanfix';
-import { computerrepairfaq, generalquestion, iphonerepair, AboutUsImg } from '../assets';
+import { computerrepairfaq, generalquestionfaq, iphonerepairfaq, AboutUsImg } from '../assets';
 import { slideriphone, sliderlogicboard, slidermacbook, sliderplaystation } from '../assets/sliderimg';
 
 export const navLinks = [
@@ -206,7 +206,7 @@ export const faq_questions = [
                 answer: "Yes. we can fix water damage devices. Depending on the severity of the damage, we either will be able to fix the device completely, or at least get out the information you dearly need from your device. Again, we are a no fix no fee place. If we cant fix it for any reason, you dont pay."
             },
         ],
-        img: iphonerepair,
+        img: iphonerepairfaq,
     },
     {
         id: 3,
@@ -253,7 +253,7 @@ export const faq_questions = [
                 answer: "We are open Mon:10:00 AM - 2:00 PM, Tue to Fri:9:00 AM - 6:00 PM, Sat:10:00 AM - 4:00 PM, and also Sun:10:00 AM - 3:00 PM"
             },
         ],
-        img: generalquestion,
+        img: generalquestionfaq,
     },
 ];
 

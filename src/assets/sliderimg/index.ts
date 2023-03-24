@@ -1,7 +1,7 @@
-import sliderplaystation from './Max_Repair_web-02.jpg';
-import slideriphone from './Max_Repair_web-05.jpg';
-import slidermacbook from './Max_Repair_web-09.jpg';
-import sliderlogicboard from './Max_Repair_web-11.jpg';
+import slideriphone  from './slider01.png';
+import sliderlogicboard from './slider02.jpg';
+import slidermacbook from './slider03.png';
+import sliderplaystation from './slider04.png';
 
 export {
     slideriphone,

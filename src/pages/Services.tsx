@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { repairs } from '../constants/repairs';
-import { MdCheckCircle } from "react-icons/md";
+import { MdCheckCircle, MdAlternateEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
-import { MdAlternateEmail} from "react-icons/md";
 
 const Services = () => {
 
@@ -21,7 +20,7 @@ const Services = () => {
                                     ${ repair.id === 'gamingconsole_repair' && 'sm:pb-4 pb-1'}`}>
                         {repair.title}
                     </h1>
-                    <div className={`flex sm:flex-row flex-col-reverse flex-1 justify-between items-center pb-8
+                    <div className={`flex sm:flex-row flex-col-reverse flex-1 justify-between items-center pb-8 pt-4
                                     ${ repair.id === 'gamingconsole_repair' && 'hidden'}
                                     `}>
                         <div className='max-w-[420px]'>

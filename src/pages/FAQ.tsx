@@ -31,7 +31,7 @@ const FAQ = () => {
                     Frequently Asked Question
                 </h1>
                 {faq_questions.map(({id, title, questions, img}) =>
-                <div key={id} className='flex flex-col justify-between pb-8'>
+                <div key={id} className='flex flex-col justify-between sm:pb-12 pb-8'>
                     {/* <div key={id} className='flex flex-col min-h-[140px] w-full lg:w-3/5 overflow-x-scroll rounded-lg p-10 lg:overflow-visible'> */}
                     <div className='flex sm:flex-row flex-col-reverse min-h-[140px] w-full overflow-x-scroll rounded-lg lg:overflow-visible justify-between items-center sm:pb-0 pb-8'>
                         <div className='xxs:max-w-[270px] sm:max-w-[500px] xl:max-w-[620px]'>
