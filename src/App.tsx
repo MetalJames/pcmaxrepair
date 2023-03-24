@@ -21,12 +21,6 @@ function App() {
             name="description"
             content="iPhone, Cell Phone, MacBook, and Laptop Repair Store in Port Credit Mississauga"
           />
-          <meta
-            name="keywords"
-            content="mobile phone repair shops near me, iphone repair, 
-            smartphone repair, laptop repair, macbook repair,
-            electronic repair shop port credit"
-          />
         </Helmet>
         <main className="flex-grow">
           <Routes>

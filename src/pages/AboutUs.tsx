@@ -14,10 +14,6 @@ const AboutUs = () => {
                     name="description"
                     content="About PCMaxRepair Store in Port Credit Mississauga"
                 />
-                <meta
-                    name="keywords"
-                    content="max repair store port credit"
-                />
             </Helmet>
             { aboutus.map((about) => (
                 <div key={about.id} className='pb-8'>
