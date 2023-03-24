@@ -6,7 +6,7 @@ import { MdArrowRightAlt } from 'react-icons/md';
 const OurServices = () => {
     return (
         <div className='flex flex-col sm:px-24 px-6 sm:py-16 py-6'>
-            <h1 className='font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full text-center'>Our Services</h1>
+            <h2 className='font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full text-center'>Our Services</h2>
             <div className='flex flex-wrap justify-center w-full'>
                 {ourservices.map(({ id, title, description, logo: Icon, link}, index) => 
                 <div key={id} className={`bg-[#f0f8ff] text-black rounded-[20px] sm:m-4 m-0 sm:mb-4 mb-8

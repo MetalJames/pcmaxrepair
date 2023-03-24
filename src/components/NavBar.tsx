@@ -52,7 +52,7 @@ const Navbar = () => {
                         <p>Today open</p>{day.hours}
                     </div>
                 ))}
-                <img src={toggle ? close : menu} alt='menu' className='w-[28px] h-[28px] object-contain'
+                <img src={toggle ? close : menu} alt='menu' title='menu' loading='eager' width={'auto'} height={'auto'} className='w-[28px] h-[28px] object-contain'
                     onClick={() => setToggle((prev) => (!prev))}
                 />
                 <div className={`${toggle ? 'flex' : 'hidden'}
@@ -94,37 +94,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-
-
-
-
-// {/* <ul className='flex py-4 px-10 justify-end items-center'>
-//                 <Link to='/'>
-//                     <li className='mr-10'>Home</li>
-//                 </Link>
-//                 <Link to='/about_us'>
-//                     <li className='mr-10'>About Us</li>
-//                 </Link>
-//                 <li className='mr-10' onMouseOver={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
-//                     <div className='dropdown inline-block relative'>
-//                         <button className='inline-flex items-center'>
-//                             <span className='mr-1'>Services</span>
-//                             <svg className={`w-4 h-4 object-contain ml-2 ${open ? 'rotate-180 transition-all' : 'rotate-0 transition-all'}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg>
-//                         </button>
-//                         <ul className={`dropdown-menu hidden absolute text-gray-700 pt-1 z-50 ${open ? 'opacity-100 transition-all' : 'opacity-0 transition-all mt-1'}`}>
-//                             <Link to='/iphone_repair'>
-//                                 {/* <li className=""><a className='rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap' href="#">iPhone Repair</a></li> */}
-//                                 <li className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">iPhone Repair</li>
-//                             </Link>
-//                             <li className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">Two</li>
-//                             <li className="ounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">Three is the magic number</li>
-//                         </ul>
-//                     </div>
-//                 </li>
-//                 <Link to='/faq'>
-//                     <li className='mr-10'>FAQ</li>
-//                 </Link>
-//                 <Link to='/contact_us'>
-//                     <li className='mr-10'>Contact Us</li>
-//                 </Link>
-//             </ul> */}

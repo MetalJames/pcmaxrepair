@@ -21,6 +21,7 @@ function App() {
             name="description"
             content="iPhone, Cell Phone, MacBook, and Laptop Repair Store in Port Credit Mississauga"
           />
+          <link rel="canonical" href="/" />
         </Helmet>
         <main className="flex-grow">
           <Routes>
