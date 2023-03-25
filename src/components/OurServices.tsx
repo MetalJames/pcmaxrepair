@@ -4,7 +4,24 @@ import { ourservices } from '../constants';
 import { MdArrowRightAlt } from 'react-icons/md';
 
 const OurServices = () => {
+
+    // const openInNewTab = (link:any) => {
+    //     window.open(link, "_blank", "noreferrer");
+    // };
+
+    // const handleClick = (e:any) => {
+    //     if (e.type === "click") {
+    //         console.log("Left click");
+    //     } else if (e.type === "contextmenu") {
+    //         console.log("Right click");
+    //     }
+    // };
+
+    // const leftClick = "click";
+    // const rightClick = "contextmenu";
+
     return (
+        // return <p onClick={handleClick} onContextMenu={handleClick}>Something</p>
         <div className='flex flex-col sm:px-24 px-6 sm:py-16 py-6'>
             <h2 className='font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full text-center'>Our Services</h2>
             <div className='flex flex-wrap justify-center w-full'>
@@ -13,7 +30,8 @@ const OurServices = () => {
                                         hover:-translate-y-2 shadow-sm shadow-black hover:shadow-lg hover:shadow-[blue] 
                                         ease-in-out duration-300
                                         ${index === ourservices.length - 1 ? 'mb-0' : 'mb-8'}`}>
-                    <Link key={id} to={`${link}`}>
+                    <Link key={id} to={link}>
+                    {/* <Link key={id} to={link} onContextMenu={() => openInNewTab(`#${link}`)}> */}
                         <div className='flex flex-col justify-between sm:px-10 px-6 sm:py-12 py-8 rounded-[20px] max-w-[370px] h-full'>
                             <div>
                                 <div className='flex text-6xl pb-6 justify-center items-center' >

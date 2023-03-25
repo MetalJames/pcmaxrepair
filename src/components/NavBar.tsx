@@ -44,7 +44,7 @@ const Navbar = () => {
                 ))}
             </ul>
             <div className='sm:hidden flex flex-1 justify-between items-center px-10'>
-                <Link to='/'>
+                <Link to='/' onClick={() => setToggle(false)}>
                     Home
                 </Link>
                 {openhours.filter(day => day.id === openday).map((day) => (
