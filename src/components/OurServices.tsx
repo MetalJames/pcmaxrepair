@@ -13,7 +13,7 @@ const OurServices = () => {
                                         hover:-translate-y-2 shadow-sm shadow-black hover:shadow-lg hover:shadow-[blue] 
                                         ease-in-out duration-300
                                         ${index === ourservices.length - 1 ? 'mb-0' : 'mb-8'}`}>
-                    <Link key={id} to={`${link}`}>
+                    <Link key={id} to={`https://pcmaxrepair.vercel.app${link}`}>
                         <div className='flex flex-col justify-between sm:px-10 px-6 sm:py-12 py-8 rounded-[20px] max-w-[370px] h-full'>
                             <div>
                                 <div className='flex text-6xl pb-6 justify-center items-center' >
