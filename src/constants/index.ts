@@ -58,11 +58,11 @@ export const navLinks = [
                 title: "Gaming Console Repair",
                 sublink: '/gamingconsole_repair',
             },
-            {
-                id: "otherelectronicsrepair",
-                title: "Other Electronics Repair",
-                sublink: '/otherelectronic_repair',
-            },
+            // {
+            //     id: "otherelectronicsrepair",
+            //     title: "Other Electronics Repair",
+            //     sublink: '/otherelectronic_repair',
+            // },
         ]
     },
     {
