@@ -26,7 +26,7 @@ const Slider = () => {
     };
 
     return (
-        <SliderSlick {...settings} className='mb-10'>
+        <SliderSlick {...settings} className='mb-10 mt-[40px]'>
                 {slidercontent.map((slide) => (
                     <div key={slide.id}>
                         <div className={`flex w-full justify-between sm:items-stretch items-center

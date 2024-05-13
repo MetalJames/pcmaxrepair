@@ -13,7 +13,7 @@ const Navbar = () => {
     let openday = weekday[date.getDay()];
 
     return (
-        <nav className='w-full flex py-6 justify-between items-center navbar'>
+        <nav className='w-full flex mt-[90px] lg:mt-[60px] py-4 justify-between items-center navbar fixed top-0 z-40 bg-white'>
             <ul key={1} className='list-none sm:flex hidden justify-end items-center flex-1'>
                 {navLinks.map(({ id, title, link, links }) => (
                     <div key={id}>
@@ -43,6 +43,7 @@ const Navbar = () => {
                     </div>
                 ))}
             </ul>
+            {/* mobile menu starts here */}
             <div className='sm:hidden flex flex-1 justify-between items-center px-10'>
                 <Link to='/' onClick={() => setToggle(false)}>
                     Home

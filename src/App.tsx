@@ -43,7 +43,7 @@ function App() {
           />
           <link rel="canonical" href="/" />
         </Helmet>
-        <main className="flex-grow">
+        <main className="flex-grow mt-[150px] sm:mt-[120px] lg:mt-[100px]">
           <Routes>
             <Route path="/active_tab?" element={<Home />} />
             <Route path="/about_us" element={<AboutUs />} />

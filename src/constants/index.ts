@@ -80,7 +80,7 @@ export const navLinks = [
 export const openhours = [
     {
         id: 'Monday',
-        hours: '10:00 AM – 2:00 PM',
+        hours: '12:00 AM – 5:00 PM',
     },
     {
         id: 'Tuesday',
@@ -341,13 +341,13 @@ export const ourservices = [
         logo: MdOutlineVideogameAsset,
         link: '/gamingconsole_repair',
     },
-    {
-        id: 'our-services-9',
-        title: 'Other Electronics Repair',
-        description: 'If you can not see your device in the listing, no worries - give us a call and ask, we will be able to help you',
-        logo: MdDevicesOther,
-        link: '/otherelectronic_repair',
-    },
+    // {
+    //     id: 'our-services-9',
+    //     title: 'Other Electronics Repair',
+    //     description: 'If you can not see your device in the listing, no worries - give us a call and ask, we will be able to help you',
+    //     logo: MdDevicesOther,
+    //     link: '/otherelectronic_repair',
+    // },
 ];
 
 export const brandswecanfix = [
