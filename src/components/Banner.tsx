@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaPhoneAlt, FaDirections, FaDoorOpen } from "react-icons/fa";
 import { openhours } from "../constants";
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
 
@@ -10,9 +11,9 @@ const Banner = () => {
 
     return (
         <div className='flex px-4 py-4 sm:px-10 justify-center md:justify-between items-center bg-slate-100 shadow-md fixed top-0 w-full z-30'>
-            <a href='/'className='flex items-center sm:mr-10 mr-0'>
+            <Link to='/' className='flex items-center sm:mr-10 mr-0'>
                 <p className="font-bold text-[22px] text-center md:text-left w-[60px] md:w-full">Max Repair</p>
-            </a>
+            </Link>
             <div className='flex sm:justify-end justify-around items-center'>
                 <a href='tel:+6199942413'className='flex items-center sm:mr-10 mr-0'>
                     <FaPhoneAlt size='19' className='nav-linker hidden md:block'/>&nbsp;&nbsp;
