@@ -1,4 +1,4 @@
-import { Fragment, SetStateAction, useState } from "react";
+import { Fragment, SetStateAction, useEffect, useState } from "react";
 import { Accordion, AccordionHeader, AccordionBody } from "@material-tailwind/react";
 
 import { faq_questions } from '../constants/index';
@@ -23,6 +23,10 @@ const FAQ = () => {
     const handleOpen = (value: SetStateAction<number>) => {
         setOpen(open === value ? 0 : value);
     };
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
 
     return (
         <div className='sm:px-24 px-6 sm:py-4 py-2'>

@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FormEvent, useRef, useState } from "react";
+import React, { ChangeEvent, FormEvent, useEffect, useRef, useState } from "react";
 import axios from "axios";
 import ReCAPTCHA from 'react-google-recaptcha';
 
@@ -14,6 +14,10 @@ type ServiceMessage = {
 };
 
 const ContactUs = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
 
     const formId = "xdXy6LgPr";
     const formSparkUrl = `https://submit-form.com/${formId}`;

@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { aboutus } from '../constants';
 
 const AboutUs = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
+
     return (
         <div className='flex flex-col justify-between sm:px-24 px-10 sm:py-4 py-2'>
             <Helmet>
