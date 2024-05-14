@@ -88,12 +88,12 @@ const ContactUs = () => {
                     text: "*Please leave your message",
                 });
             } 
-            else if (recaptchaToken === false) {
-                setMessage({
-                    class: "bg-red-500",
-                    text: "*Please tell us if you are robot or not!",
-                });
-            } 
+            // else if (recaptchaToken === false) {
+            //     setMessage({
+            //         class: "bg-red-500",
+            //         text: "*Please tell us if you are robot or not!",
+            //     });
+            // } 
             else {
                 const result = await axios.post(formSparkUrl, payload);
                 console.log(result);
