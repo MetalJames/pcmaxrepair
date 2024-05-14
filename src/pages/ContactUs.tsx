@@ -15,10 +15,10 @@ type ServiceMessage = {
 
 const ContactUs = () => {
 
-    const formId = 'CxKU3VSl';
+    const formId = "xdXy6LgPr";
     const formSparkUrl = `https://submit-form.com/${formId}`;
-    const recaptchaKey = '6LepcP8kAAAAAGxI9BguXECVdyLG5BXO0QUDIEAu';
-    const recaptchaRef = useRef<any>();
+    //const recaptchaKey = '6LepcP8kAAAAAGxI9BguXECVdyLG5BXO0QUDIEAu';
+    //const recaptchaRef = useRef<any>();
 
     const regName = /^[a-zA-Z ]+$/;
     const regEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -33,7 +33,7 @@ const ContactUs = () => {
     const [submitting, setSubmitting] = useState<boolean>(false);
     const [message, setMessage] = useState<ServiceMessage>();
     // const [recaptchaToken, setReCaptchaToken] = useState<string>();
-    const [recaptchaToken, setReCaptchaToken] = useState<boolean>(false);
+    //const [recaptchaToken, setReCaptchaToken] = useState<boolean>(false);
     
     const submitForm = async (event: FormEvent) => {
         event.preventDefault();
@@ -45,7 +45,7 @@ const ContactUs = () => {
     const postSubmission = async () => {
         const payload = {
             ...formState,
-            "g-recaptcha-response": recaptchaToken,
+            //"g-recaptcha-response": recaptchaToken,
         };
 
         try {
@@ -94,7 +94,7 @@ const ContactUs = () => {
             //         text: "*Please tell us if you are robot or not!",
             //     });
             // } 
-            else {
+            //else {
                 const result = await axios.post(formSparkUrl, payload);
                 console.log(result);
                 setMessage({
@@ -102,8 +102,8 @@ const ContactUs = () => {
                     text: 'Thanks, someone will be in touch shortly.',
                 });
                 setFormState(initialFormState);
-                recaptchaRef.current.reset();
-            }
+                //recaptchaRef.current.reset();
+            //}
         } catch (error) {
             console.log(error);
             setMessage({
@@ -121,10 +121,10 @@ const ContactUs = () => {
             setFormState(updatedFormState);
     };
 
-    const updateRecaptchaToken = (token: string | null) => {
-        // setReCaptchaToken(token as string);
-        setReCaptchaToken(token as unknown as boolean);
-    };
+    // const updateRecaptchaToken = (token: string | null) => {
+    //     // setReCaptchaToken(token as string);
+    //     setReCaptchaToken(token as unknown as boolean);
+    // };
 
     return (
         <div className='flex flex-col justify-between sm:px-24 px-6 sm:py-4 py-2'>
