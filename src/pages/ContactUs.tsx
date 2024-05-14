@@ -182,7 +182,7 @@ const ContactUs = () => {
                                 value={formState?.message}
                             ></textarea>
                         </div>
-                        <ReCAPTCHA ref={recaptchaRef} sitekey={recaptchaKey} onChange={updateRecaptchaToken}/>
+                        {/* <ReCAPTCHA ref={recaptchaRef} sitekey={recaptchaKey} onChange={updateRecaptchaToken}/> */}
                         <button disabled={submitting}
                             className='mt-4 my-2 bg-blue-700 text-white w-full p-2 hover:bg-blue-900 transition-colors duration-200'>
                             {submitting ? 'Submitting...' : 'Submit'}
