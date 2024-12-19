@@ -15,7 +15,7 @@ const Banner = () => {
                 <p className="font-bold text-[22px] text-center md:text-left w-[60px] md:w-full">Max Repair</p>
             </Link>
             <div className='flex sm:justify-end justify-around items-center'>
-                <a href='tel:+6199942413'className='flex items-center sm:mr-10 mr-0'>
+                <a href='tel:+19055179610'className='flex items-center sm:mr-10 mr-0'>
                     <FaPhoneAlt size='19' className='nav-linker hidden md:block'/>&nbsp;&nbsp;
                     <p className="px-[20px] sm:px-0">905-517-9610</p>
                 </a>
