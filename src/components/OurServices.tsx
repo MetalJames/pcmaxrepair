@@ -11,7 +11,7 @@ const OurServices = () => {
             <div className='flex flex-wrap justify-center w-full'>
                 {ourservices.map(({ id, title, description, logo: Icon, link}, index) => 
                 <div key={id} className={`bg-[#f0f8ff] text-black rounded-[20px] sm:m-4 m-0 sm:mb-4 mb-8
-                                        hover:-translate-y-2 shadow-sm shadow-black hover:shadow-lg hover:shadow-[blue] 
+                                        sm:hover:-translate-y-2 shadow-sm shadow-black sm:hover:shadow-lg sm:hover:shadow-[blue] 
                                         ease-in-out duration-300
                                         ${index === ourservices.length - 1 ? 'mb-0' : 'mb-8'}`}>
                     <Link key={id} to={link}>

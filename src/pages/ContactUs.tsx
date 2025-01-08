@@ -1,6 +1,5 @@
-import React, { ChangeEvent, FormEvent, useEffect, useRef, useState } from "react";
+import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import axios from "axios";
-import ReCAPTCHA from 'react-google-recaptcha';
 
 type FormState = {
     email: string;
@@ -21,8 +20,6 @@ const ContactUs = () => {
 
     const formId = "xdXy6LgPr";
     const formSparkUrl = `https://submit-form.com/${formId}`;
-    //const recaptchaKey = '6LepcP8kAAAAAGxI9BguXECVdyLG5BXO0QUDIEAu';
-    //const recaptchaRef = useRef<any>();
 
     const regName = /^[a-zA-Z ]+$/;
     const regEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -36,11 +33,35 @@ const ContactUs = () => {
     const [formState, setFormState] = useState<FormState>(initialFormState);
     const [submitting, setSubmitting] = useState<boolean>(false);
     const [message, setMessage] = useState<ServiceMessage>();
-    // const [recaptchaToken, setReCaptchaToken] = useState<string>();
-    //const [recaptchaToken, setReCaptchaToken] = useState<boolean>(false);
     
     const submitForm = async (event: FormEvent) => {
         event.preventDefault();
+        // Validate all fields before proceeding
+        const isNameValid = formState.name !== '' && regName.test(formState.name);
+        const isEmailValid = formState.email !== '' && regEmail.test(formState.email);
+        const isMessageValid = formState.message !== '';
+        
+        if (!isNameValid) {
+            setMessage({
+                class: "bg-red-500",
+                text: "*Name is required and must contain only letters and spaces.",
+            });
+            return;
+        } else if (!isEmailValid) {
+            setMessage({
+                class: "bg-red-500",
+                text: "*Valid email is required.",
+            });
+            return;
+        } else if (!isMessageValid) {
+            setMessage({
+                class: "bg-red-500",
+                text: "*Please leave your message.",
+            });
+            return;
+        }
+
+        // If everything is valid, submit the form
         setSubmitting(true);
         await postSubmission();
         setSubmitting(false);
@@ -49,13 +70,11 @@ const ContactUs = () => {
     const postSubmission = async () => {
         const payload = {
             ...formState,
-            //"g-recaptcha-response": recaptchaToken,
         };
 
         try {
 
             // validate name input field
-
             if (formState.name === '') {
                 setMessage({
                     class: "bg-red-500",
@@ -70,7 +89,6 @@ const ContactUs = () => {
             }
 
             // validate email input field
-            
             else if (formState.email === '') {
                 setMessage({
                     class: "bg-red-500",
@@ -85,20 +103,12 @@ const ContactUs = () => {
             }
 
             //validate messege input field
-
             else if (formState.message === '') {
                 setMessage({
                     class: "bg-red-500",
                     text: "*Please leave your message",
                 });
             } 
-            // else if (recaptchaToken === false) {
-            //     setMessage({
-            //         class: "bg-red-500",
-            //         text: "*Please tell us if you are robot or not!",
-            //     });
-            // } 
-            //else {
                 const result = await axios.post(formSparkUrl, payload);
                 console.log(result);
                 setMessage({
@@ -106,8 +116,6 @@ const ContactUs = () => {
                     text: 'Thanks, someone will be in touch shortly.',
                 });
                 setFormState(initialFormState);
-                //recaptchaRef.current.reset();
-            //}
         } catch (error) {
             console.log(error);
             setMessage({
@@ -125,30 +133,11 @@ const ContactUs = () => {
             setFormState(updatedFormState);
     };
 
-    // const updateRecaptchaToken = (token: string | null) => {
-    //     // setReCaptchaToken(token as string);
-    //     setReCaptchaToken(token as unknown as boolean);
-    // };
-
     return (
         <div className='flex flex-col justify-between sm:px-24 px-6 sm:py-4 py-2'>
-            {/* <div className='flex flex-col items-center'> */}
-                <h1 className='font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full text-center sm:pb-10 pb-2'>
-                    {/* <span>
-                        <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="pb-4 mr-2 h-12 transform rotate-45"
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
-                            >
-                            <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
-                            </svg>
-                        </span> */}
-                    {/* <span> */}
-                        Contact Us
-                    {/* </span> */}
-                </h1>
-            {/* </div> */}
+            <h1 className='font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full text-center sm:pb-10 pb-2'>
+                    Contact Us
+            </h1>
             <div className='h-full flex justify-center flex-col pb-8'>
                 <div className='sm:w-2/3 w-[100%] sm:m-auto m-0 sm:p-8 p-3 shadow-lg'>
                     {message && (
@@ -186,7 +175,6 @@ const ContactUs = () => {
                                 value={formState?.message}
                             ></textarea>
                         </div>
-                        {/* <ReCAPTCHA ref={recaptchaRef} sitekey={recaptchaKey} onChange={updateRecaptchaToken}/> */}
                         <button disabled={submitting}
                             className='mt-4 my-2 bg-blue-700 text-white w-full p-2 hover:bg-blue-900 transition-colors duration-200'>
                             {submitting ? 'Submitting...' : 'Submit'}
