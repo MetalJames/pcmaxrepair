@@ -1,9 +1,8 @@
-import React from 'react';
 import { FaPhoneAlt, FaDirections, FaDoorOpen } from "react-icons/fa";
-import { openhours } from "../constants";
+import { openhours } from "../../constants";
 import { Link } from 'react-router-dom';
 
-const Banner = () => {
+export const Banner = () => {
 
     const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     const date = new Date();
@@ -35,6 +34,4 @@ const Banner = () => {
             </div>
         </div>
     );
-}
-
-export default Banner
+};

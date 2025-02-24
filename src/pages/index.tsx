@@ -1,5 +1,5 @@
-export { default as Home } from './Home';
-export { default as FAQ } from './FAQ';
-export { default as ContactUs } from './ContactUs';
-export { default as AboutUs } from './AboutUs';
-export { default as Services } from "./Services";
+export { Home } from './Home';
+export { FAQ } from './FAQ';
+export { ContactUs } from './ContactUs';
+export { AboutUs } from './AboutUs';
+export { Services } from "./Services";

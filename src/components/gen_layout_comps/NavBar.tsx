@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
-import { navLinks, openhours } from '../constants';
-import { close, menu } from '../assets';
+import { navLinks, openhours } from '../../constants';
+import { close, menu } from '../../assets';
 
-const Navbar = () => {
+export const NavBar = () => {
 
     const [open, setOpen] = useState(false);
     const [toggle, setToggle] = useState(false);
@@ -13,14 +13,14 @@ const Navbar = () => {
     let openday = weekday[date.getDay()];
 
     return (
-        <nav className='w-full flex mt-[90px] lg:mt-[60px] py-4 justify-between items-center navbar fixed top-0 z-40 bg-white'>
+        <nav className='w-full flex md:mt-[60px] mt-[90px] py-4 justify-between items-center navbar fixed top-0 z-40 bg-white'>
             <ul key={1} className='list-none sm:flex hidden justify-end items-center flex-1'>
                 {navLinks.map(({ id, title, link, links }) => (
                     <div key={id}>
                     {'services' === id ? 
                         <li className='mr-10' onMouseOver={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
                             <div className='dropdown inline-block relative'>
-                                <button className='inline-flex items-center'>
+                                <button className='inline-flex items-center font-poppins font-semibold cursor-pointer text-[16px] text-black hover:text-blue-500 transition-all duration-200'>
                                     <span className='mr-1'>{title}</span>
                                     <svg className={`w-4 h-4 object-contain ml-2 ${open ? 'rotate-180 transition-all' : 'rotate-0 transition-all'}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /> </svg>
                                 </button>
@@ -35,7 +35,7 @@ const Navbar = () => {
                         </li>
                         :
                         <Link key={id} to={`${link}`}>
-                            <li key={id} className='font-poppins font-normal cursor-pointer text-[16px] text-black mr-10'>
+                            <li key={id} className='font-poppins font-semibold cursor-pointer text-[16px] text-black mr-10 hover:text-blue-500 transition-all duration-200'>
                                 {title}
                             </li>
                         </Link>
@@ -92,6 +92,4 @@ const Navbar = () => {
             </div>
         </nav>
     )
-}
-
-export default Navbar
+};

@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
-import Slider from '../components/Slider'
-import { WhyChooseUs, OurServices, BrandsWeCanFix, Reviews } from '../components';
+import { useEffect } from 'react';
+import { Slider, WhyChooseUs, OurServices, BrandsWeCanFix, Reviews } from '../components/home_comps';
 
-const Home = () => {
+export const Home = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -17,6 +16,4 @@ const Home = () => {
             <Reviews />
         </div>
     );
-}
-
-export default Home
+};

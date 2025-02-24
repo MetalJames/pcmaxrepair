@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Banner, NavBar, Footer } from "./components";
-import { ContactUs, AboutUs, Home, FAQ, Services } from "./pages";
+import { BrowserRouter } from "react-router-dom";
+import { Banner, NavBar, Footer } from "./components/gen_layout_comps";
+import { Router } from "./routes/Router";
 
 function App() {
 
@@ -24,13 +24,7 @@ function App() {
           <link rel="canonical" href="/" />
         </Helmet>
         <main className="flex-grow mt-[150px] sm:mt-[120px] lg:mt-[100px]">
-          <Routes>
-            <Route path="/active_tab?" element={<Home />} />
-            <Route path="/about_us" element={<AboutUs />} />
-            <Route path="/:id" element={<Services />} />
-            <Route path="/faq" element={<FAQ />} />
-            <Route path="/contact_us" element={<ContactUs />} />
-          </Routes>
+          <Router />
         </main>
         <Footer />
       </BrowserRouter>
