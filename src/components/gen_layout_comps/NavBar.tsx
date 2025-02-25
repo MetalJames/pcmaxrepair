@@ -27,7 +27,7 @@ export const NavBar = () => {
                                 <ul className={`w-[200px] dropdown-menu hidden absolute text-gray-700 pt-1 z-50 ${open ? 'visible transition-all' : 'invisible transition-all mt-1'}`}>
                                     {links!.map(({ id, title, sublink }) => (
                                         <Link key={id} to={`${sublink}`}>
-                                            <li key={id} onClick={() => setOpen(false)} className="rounded bg-slate-100 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">{title}</li>
+                                            <li key={id} onClick={() => setOpen(false)} className="bg-slate-100 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">{title}</li>
                                         </Link>
                                     ))}
                                 </ul>
@@ -63,7 +63,7 @@ export const NavBar = () => {
                         {navLinks.filter(link => link.id != 'home').map(({ id, title, link, links }) => (
                             <div key={id}>
                             {'services' === id ? 
-                                <li className='mr-10' onClick={() => setOpen((prev) => (!prev))}>
+                                <li className='mr-10 mb-2 text-[18px]' onClick={() => setOpen((prev) => (!prev))}>
                                     <div className='dropdown inline-block relative'>
                                         <button className='inline-flex items-center'>
                                             <span className='mr-1'>{title}</span>
@@ -72,7 +72,7 @@ export const NavBar = () => {
                                         <ul className={`w-[200px] dropdown-menu hidden absolute bg-slate-100 text-gray-700 pt-1 z-50 ${open ? 'opacity-100 transition-all' : 'opacity-0 transition-all mt-1'}`}>
                                             {links!.map(({ id, title, sublink }) => (
                                                 <Link key={id} to={`${sublink}`}>
-                                                    <li key={id} onClick={() => setToggle(false)} className="hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">{title}</li>
+                                                    <li key={id} onClick={() => setToggle(false)} className="hover:bg-gray-400 py-2 px-4 block text-[18px] whitespace-no-wrap">{title}</li>
                                                 </Link>
                                             ))}
                                         </ul>
@@ -80,7 +80,7 @@ export const NavBar = () => {
                                 </li>
                                 :
                                 <Link key={id} to={`${link}`}>
-                                    <li key={id} onClick={() => setToggle(false)} className='font-poppins font-normal cursor-pointer text-[16px] text-black mr-10'>
+                                    <li key={id} onClick={() => setToggle(false)} className='font-poppins font-normal cursor-pointer text-[18px] text-black mr-10 mb-2'>
                                         {title}
                                     </li>
                                 </Link>
