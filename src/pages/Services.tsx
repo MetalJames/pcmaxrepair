@@ -39,7 +39,7 @@ export const Services = () => {
                                 <div key={id}>
                                     <p>{description}</p>
                                     <div className='flex sm:flex-row flex-col justify-between md:items-center items-start'>
-                                        <a href='tel:+6199942413'className='flex items-center mt-2'>
+                                        <a href='tel:+905 517 9610'className='flex items-center mt-2'>
                                             <FaPhoneAlt size='19' className='nav-linker'/>&nbsp;&nbsp;
                                             <p>{phonenumber}</p>
                                         </a>
